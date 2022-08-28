@@ -32,8 +32,8 @@ export const Content = () => {
             textTransform="uppercase"
             sx={{
               background: theme.palette.gradient.orangePink,
-              "-webkit-background-clip": "text",
-              "-webkit-text-fill-color": "transparent",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
           >
             #Quality Assured
@@ -41,7 +41,11 @@ export const Content = () => {
           <Typography variant={md ? "h1" : "h2"} fontWeight={600}>
             Designing experiences that convert
           </Typography>
-          <Typography variant={md ? "body1" : "body2"} color="text.secondary" width="80%">
+          <Typography
+            variant={md ? "body1" : "body2"}
+            color="text.secondary"
+            width="80%"
+          >
             We help build brands that make an impact & boost conversions with
             state-of-the art web solutions
           </Typography>

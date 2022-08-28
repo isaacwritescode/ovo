@@ -12,8 +12,12 @@ export const Work = () => {
 
   return (
     <Stack bgcolor="black.main" width="100%" py={12} alignItems="center">
-      <Stack maxWidth={1400} width="80%">
-        <Stack direction={lg ? "row" : "column"} justifyContent="space-between" spacing={4}>
+      <Stack maxWidth={1400} width={md ? "80%" : "90%"}>
+        <Stack
+          direction={lg ? "row" : "column"}
+          justifyContent="space-between"
+          spacing={4}
+        >
           <Stack maxWidth={520} spacing={2}>
             <Typography
               variant={md ? "h3" : "h4"}

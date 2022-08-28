@@ -1,12 +1,15 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Stack } from "@mui/system";
 import React from "react";
 import { Header } from "../common/Header";
 import { SERVICES } from "./constants";
 
 export const Services = () => {
+  const theme = useTheme();
+  const md = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
-    <Stack width="80%" py={12} maxWidth={1400} m="auto">
+    <Stack width={md ? "80%" : "90%"} py={12} maxWidth={1400} m="auto">
       <Header
         title="services"
         heading="Startups, Shopify brands, Small businesses experience more conversions with OVO"
