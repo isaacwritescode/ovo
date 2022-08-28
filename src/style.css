@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Gilroy-Private";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/Gilroy/Gilroy-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Private";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/public/fonts/Gilroy/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Private";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/public/fonts/Gilroy/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Private";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/public/fonts/Gilroy/Gilroy-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Digital-Geometric-Private";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/public/fonts/Digital-Geometric/Digital-Geometric.ttf");
+}
+
+:root {
+  --transition: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(162, 162, 167);
+  border-radius: 100px;
+}
