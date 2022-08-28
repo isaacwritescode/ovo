@@ -5,6 +5,7 @@ import { Services } from "../sections/Services";
 import { StatBlock } from "../sections/StatBlock";
 import { Work } from "../sections/Work";
 import { Testimonials } from "../sections/Testimonials";
+import { Footer } from "../sections/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Work />
       <FAQ />
       <Testimonials />
+      <Footer />
     </>
   );
 }
