@@ -4,6 +4,7 @@ import { Hero } from "../sections/Hero";
 import { Services } from "../sections/Services";
 import { StatBlock } from "../sections/StatBlock";
 import { Work } from "../sections/Work";
+import { Testimonials } from "../sections/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Work />
       <FAQ />
+      <Testimonials />
     </>
   );
 }

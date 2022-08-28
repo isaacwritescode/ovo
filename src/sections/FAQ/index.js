@@ -21,7 +21,7 @@ export const FAQ = () => {
       maxWidth={1400}
       m="auto"
       flexWrap="nowrap"
-      width={md ? "80%" : "90%"}
+      width={md ? "75%" : "90%"}
       direction={lg ? "row" : "column"}
       alignItems={lg? "center": "start"}
     >

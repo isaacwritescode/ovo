@@ -12,7 +12,7 @@ export const Work = () => {
 
   return (
     <Stack bgcolor="black.main" width="100%" py={12} alignItems="center">
-      <Stack maxWidth={1400} width={md ? "80%" : "90%"}>
+      <Stack maxWidth={1400} width={md ? "75%" : "90%"}>
         <Stack
           direction={lg ? "row" : "column"}
           justifyContent="space-between"

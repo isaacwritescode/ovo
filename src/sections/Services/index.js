@@ -9,12 +9,12 @@ export const Services = () => {
   const md = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Stack width={md ? "80%" : "90%"} py={12} maxWidth={1400} m="auto">
+    <Stack width={md ? "75%" : "90%"} py={12} maxWidth={1400} m="auto">
       <Header
         title="services"
         heading="Startups, Shopify brands, Small businesses experience more conversions with OVO"
         desc="OVO, a full-service digital marketing agency in Goa, offers solutions across paid and owned channels"
-        maxWidth={700}
+        maxWidth={640}
         mb={8}
       />
       <Grid container spacing={6} columns={{ xs: 4, sm: 8, md: 12 }}>

@@ -37,7 +37,7 @@ export const PROJECTS = [
   {
     logo: "/media/images/projects/souza-lopes-comforts/logo.png",
     thumbnail: "/media/images/projects/souza-lopes-comforts/thumbnail.png",
-    heading: "Souza Lopez Comforts",
+    heading: "SL Comforts",
     desc: "Guesthouse website",
     url: "https://souzalopescomforts.com",
   },
