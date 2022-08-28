@@ -15,14 +15,15 @@ export const Content = () => {
 
   return (
     <Box>
-      <Stack spacing={4} alignItems="center">
+      <Stack spacing={4} alignItems={md ? "center" : "start"}>
         <Stack
-          textAlign="center"
-          alignItems="center"
+          textAlign={md ? "center" : "left"}
+          alignItems={md ? "center" : "start"}
           justifyContent="center"
           width="85%"
           spacing={2}
           data-aos="fade-up"
+          maxWidth={700}
         >
           <Typography
             variant={md ? "body1" : "body2"}
@@ -35,12 +36,12 @@ export const Content = () => {
               "-webkit-text-fill-color": "transparent",
             }}
           >
-            #Leading world class professionals
+            #Quality Assured
           </Typography>
           <Typography variant={md ? "h1" : "h2"} fontWeight={600}>
             Designing experiences that convert
           </Typography>
-          <Typography variant={md ? "body1" : "body2"} color="text.secondary">
+          <Typography variant={md ? "body1" : "body2"} color="text.secondary" width="80%">
             We help build brands that make an impact & boost conversions with
             state-of-the art web solutions
           </Typography>

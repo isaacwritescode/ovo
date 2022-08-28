@@ -11,6 +11,8 @@ export const Services = () => {
         title="services"
         heading="Startups, Shopify brands, Small businesses experience more conversions with OVO"
         desc="OVO, a full-service digital marketing agency in Goa, offers solutions across paid and owned channels"
+        maxWidth={700}
+        mb={8}
       />
       <Grid container spacing={6} columns={{ xs: 4, sm: 8, md: 12 }}>
         {SERVICES.map(({ heading, icon, desc, color }, idx) => (
