@@ -16,14 +16,14 @@
   font-family: "Gilroy-Private";
   font-style: normal;
   font-weight: 600;
-  src: url("/public/fonts/Gilroy/Gilroy-Bold.ttf");
+  src: url("/public/fonts/Gilroy/Gilroy-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Gilroy-Private";
   font-style: normal;
   font-weight: 700;
-  src: url("/public/fonts/Gilroy/Gilroy-ExtraBold.ttf");
+  src: url("/public/fonts/Gilroy/Gilroy-Bold.ttf");
 }
 
 @font-face {

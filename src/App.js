@@ -27,6 +27,7 @@ function App() {
   useEffect(() => {
     init({
       once: true,
+      duration: 1000
     });
     refresh();
   }, []);

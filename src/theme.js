@@ -7,7 +7,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           fontWeight: 500,
-          color: blueGrey[900],
+          color: "#000000",
         },
         h1: {
           letterSpacing: "-5px",
@@ -50,10 +50,10 @@ const theme = createTheme({
           borderColor: blueGrey[100],
         },
         sizeLarge: {
-          padding: "16px 32px",
+          padding: "14px 28px",
         },
         sizeMedium: {
-          padding: "8px 24px",
+          padding: "6px 20px",
         },
       },
     },
@@ -71,20 +71,23 @@ const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: blueGrey[900],
+      main: "#000000",
       contrastText: "#ffffff",
     },
     white: {
       main: "#ffffff",
-      contrastText: blueGrey[900],
+      contrastText: "#000000",
     },
     black: {
-      main: blueGrey[900],
+      main: "#000000",
       contrastText: "#ffffff",
     },
     text: {
-      primary: blueGrey[900],
+      primary: "#000000",
       secondary: blueGrey[300],
+    },
+    gradient: {
+      orangePink: "linear-gradient(90deg, #C98530 3.95%, #F02864 100.2%)",
     },
     grey: blueGrey,
   },
