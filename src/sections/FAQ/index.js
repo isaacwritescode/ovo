@@ -1,4 +1,4 @@
-import { Button, Grid, useTheme, useMediaQuery } from "@mui/material";
+import { Button, Grid, useTheme, useMediaQuery, Box } from "@mui/material";
 import { useState } from "react";
 import { Link } from "../common/Link";
 import { Header } from "../common/Header";
@@ -23,7 +23,7 @@ export const FAQ = () => {
       flexWrap="nowrap"
       width={md ? "75%" : "90%"}
       direction={lg ? "row" : "column"}
-      alignItems={lg? "center": "start"}
+      alignItems={lg ? "center" : "start"}
     >
       <Grid item lg={6}>
         <Header
@@ -45,7 +45,9 @@ export const FAQ = () => {
         />
       </Grid>
       <Grid item lg={6}>
-        <AccordionGroup expanded={expanded} handleChange={handleChange} />
+        <Box data-aos="fade-up" delay={200}>
+          <AccordionGroup expanded={expanded} handleChange={handleChange} />
+        </Box>
       </Grid>
     </Grid>
   );

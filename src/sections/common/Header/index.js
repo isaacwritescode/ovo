@@ -1,4 +1,4 @@
-import { Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Stack } from "@mui/system";
 
 export const Header = ({ title, heading, desc, type, maxWidth, mb, cta }) => {
@@ -9,34 +9,38 @@ export const Header = ({ title, heading, desc, type, maxWidth, mb, cta }) => {
 
   return type === "page" ? (
     <Stack gap={4}>
-      <Stack
-        alignItems="start"
-        justifyContent="start"
-        gap={1}
-        textAlign="left"
-        maxWidth={maxWidth}
-        mb={mb}
-      >
-        <Typography
-          variant={md ? "h6" : "body1"}
-          textTransform="uppercase"
-          fontFamily="Digital-Geometric-Private"
-          sx={{ WebkitTextStroke: "0.7px #ffffff" }}
+      <Box data-aos="fade-up">
+        <Stack
+          alignItems="start"
+          justifyContent="start"
+          gap={1}
+          textAlign="left"
+          maxWidth={maxWidth}
+          mb={mb}
         >
-          {title}
-        </Typography>
-        <Typography variant={md ? "h3" : "h4"} fontWeight={600}>
-          {heading}
-        </Typography>
-        <Typography
-          variant={md ? "body1" : "body2"}
-          color="text.secondary"
-          width="80%"
-        >
-          {desc}
-        </Typography>
-      </Stack>
-      {cta}
+          <Typography
+            variant={md ? "h6" : "body1"}
+            textTransform="uppercase"
+            fontFamily="Digital-Geometric-Private"
+            sx={{ WebkitTextStroke: "0.7px #ffffff" }}
+          >
+            {title}
+          </Typography>
+          <Typography variant={md ? "h3" : "h4"} fontWeight={600}>
+            {heading}
+          </Typography>
+          <Typography
+            variant={md ? "body1" : "body2"}
+            color="text.secondary"
+            width="80%"
+          >
+            {desc}
+          </Typography>
+        </Stack>
+      </Box>
+      <Box data-aos="fade-up" data-aos-delay={200}>
+        {cta}
+      </Box>
     </Stack>
   ) : (
     <Stack

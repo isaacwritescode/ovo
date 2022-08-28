@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Home</title>
+        <title>OVO | Web Design & Development Agency</title>
       </Helmet>
       <Hero />
       <StatBlock />
