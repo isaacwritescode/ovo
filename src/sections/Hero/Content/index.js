@@ -11,24 +11,20 @@ import { Link } from "../../common/Link";
 export const Content = () => {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.up("md"));
-  const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <Box>
-      <Stack spacing={4} alignItems={md ? "center" : "start"}>
+      <Stack spacing={4} alignItems="start">
         <Stack
-          textAlign={md ? "center" : "left"}
-          alignItems={md ? "center" : "start"}
+          alignItems="start"
           justifyContent="center"
-          width="85%"
-          spacing={2}
+          width="80%"
           data-aos="fade-up"
-          maxWidth={700}
+          maxWidth={480}
+          spacing={1}
         >
           <Typography
             variant="body1"
             fontWeight={600}
-            lineHeight={1}
             textTransform="uppercase"
             sx={{
               background: theme.palette.gradient.orangePink,
@@ -38,14 +34,14 @@ export const Content = () => {
           >
             #Quality Assured
           </Typography>
-          <Typography variant={md ? "h1" : "h2"} fontWeight={600}>
+          <Typography
+            variant={md ? "h1" : "h2"}
+            lineHeight={1}
+            fontWeight={600}
+          >
             Designing experiences that convert
           </Typography>
-          <Typography
-            variant="body1"
-            color="text.secondary"
-            width="80%"
-          >
+          <Typography variant="body1" color="text.secondary">
             We help build brands that make an impact & boost conversions with
             state of the art web solutions
           </Typography>
@@ -54,13 +50,12 @@ export const Content = () => {
           <Link
             path=""
             component={
-              <Button variant="contained" size="large" fullWidth={!sm}>
+              <Button variant="contained" size="large">
                 Request a Quote
               </Button>
             }
           />
         </Box>
       </Stack>
-    </Box>
   );
 };

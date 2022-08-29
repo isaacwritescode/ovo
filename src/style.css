@@ -61,3 +61,15 @@ body {
   background-color: rgb(162, 162, 167);
   border-radius: 100px;
 }
+
+/* Animations */
+
+.visible {
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+
+.invisible {
+  position: absolute;
+  opacity: 0;
+}
