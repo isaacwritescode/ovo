@@ -32,7 +32,7 @@ export const Content = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            #Quality Assured
+            #one stop solution
           </Typography>
           <Typography
             variant={md ? "h1" : "h2"}

@@ -7,7 +7,6 @@ import { AccordionGroup } from "./AccordionGroup";
 export const FAQ = () => {
   const theme = useTheme();
   const lg = useMediaQuery(theme.breakpoints.up("lg"));
-  const md = useMediaQuery(theme.breakpoints.up("md"));
   const [expanded, setExpanded] = useState("panel0");
   const handleChange = (panel) => (_, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -21,7 +20,7 @@ export const FAQ = () => {
       maxWidth={1400}
       m="auto"
       flexWrap="nowrap"
-      width={md ? "75%" : "90%"}
+      width={lg ? "75%" : "90%"}
       direction={lg ? "row" : "column"}
       alignItems={lg ? "center" : "start"}
     >

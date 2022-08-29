@@ -10,11 +10,12 @@ import { Button } from "@mui/material";
 
 export const Footer = () => {
   const theme = useTheme();
+  const lg = useMediaQuery(theme.breakpoints.up("lg"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <Stack
-      width={md ? "75%" : "90%"}
+      width={lg ? "75%" : "90%"}
       m="auto"
       py={8}
       spacing={8}
@@ -25,9 +26,9 @@ export const Footer = () => {
         direction={md ? "row" : "column"}
         justifyContent="space-between"
         alignItems={md ? "center" : "start"}
-        gap={4}
+        gap={md || 4}
       >
-        <Typography variant="h3" fontWeight={600} maxWidth={700}>
+        <Typography variant="h3" fontWeight={600} maxWidth={480}>
           Ready to improve your online presence?
         </Typography>
         <Button size="large" variant="contained">

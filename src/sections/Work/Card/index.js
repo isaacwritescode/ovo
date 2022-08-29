@@ -11,7 +11,7 @@ import { Link } from "../../common/Link";
 
 export const Card = ({ logo, thumbnail, heading, desc, url }) => {
   const theme = useTheme();
-  const md = useMediaQuery(theme.breakpoints.up("md"));
+  const sm = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <Stack
       width="100%"
@@ -46,7 +46,7 @@ export const Card = ({ logo, thumbnail, heading, desc, url }) => {
           <Typography variant="h6" fontWeight={600} color="white.main">
             {heading}
           </Typography>
-          <Typography variant={md ? "body2" : "caption"} color="text.secondary">
+          <Typography variant={sm ? "body1" : "body2"} color="text.secondary">
             {desc}
           </Typography>
         </Stack>

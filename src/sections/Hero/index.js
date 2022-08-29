@@ -5,8 +5,8 @@ import { ImageView } from "./ImageView";
 
 export const Hero = () => {
   const theme = useTheme();
+  const lg = useMediaQuery(theme.breakpoints.up("lg"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
-  const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
     <Stack
@@ -17,10 +17,10 @@ export const Hero = () => {
     >
       <Grid
         container
-        py={md ? 6 : 8}
+        py={lg ? 6 : 8}
         gap={8}
         direction={md ? "row" : "column"}
-        width={sm ? "75%" : "90%"}
+        width={lg ? "75%" : "90%"}
         alignItems={md ? "center" : "start"}
         justifyContent="space-between"
         maxWidth={1400}

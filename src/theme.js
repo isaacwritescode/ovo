@@ -17,6 +17,7 @@ const theme = createTheme({
         h2: {
           letterSpacing: "-4px",
           lineHeight: 1.1,
+          fontSize: "56px",
         },
         h3: {
           letterSpacing: "-3px",
@@ -90,6 +91,15 @@ const theme = createTheme({
       orangePink: "linear-gradient(90deg, #C98530 3.95%, #F02864 100.2%)",
     },
     grey: blueGrey,
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1400,
+    },
   },
 });
 

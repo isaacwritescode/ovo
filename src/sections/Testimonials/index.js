@@ -6,14 +6,15 @@ import { TESTIMONIALS } from "./constants";
 
 export const Testimonials = () => {
   const theme = useTheme();
+  const xl = useMediaQuery("(min-width:1400px)");
   const lg = useMediaQuery(theme.breakpoints.up("lg"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <Stack width="100%" py={12} bgcolor="#f2f3f5">
       <Stack
-        width={md ? "75%" : "90%"}
-        alignItems={md ? "start" : "center"}
+        width={lg ? "75%" : "90%"}
+        alignItems="start"
         m="auto"
         gap={4}
         maxWidth={1275}
@@ -27,7 +28,7 @@ export const Testimonials = () => {
           mb={md ? 8 : 4}
         />
 
-        <Masonry columns={lg ? 3 : md ? 2 : 1} spacing={2}>
+        <Masonry columns={xl ? 3 : md ? 2 : 1} spacing={2}>
           {TESTIMONIALS.map(({ name, occupation, review, image }, idx) => (
             <Card
               key={idx}

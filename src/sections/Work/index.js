@@ -11,8 +11,8 @@ export const Work = () => {
   const md = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Stack bgcolor="black.main" width="100%" py={12} alignItems="center">
-      <Stack maxWidth={1400} width={md ? "75%" : "90%"}>
+    <Stack bgcolor="black.main" width="100%" py={12} alignItems="center" overflow="hidden">
+      <Stack maxWidth={1400} width={lg ? "75%" : "90%"}>
         <Stack
           direction={lg ? "row" : "column"}
           justifyContent="space-between"
@@ -44,9 +44,9 @@ export const Work = () => {
             ))}
           </Stack>
         </Stack>
-        <Grid container spacing={4} columns={{ xs: 4, sm: 8, md: 12 }} my={4}>
+        <Grid container spacing={4} columns={{ xs: 4, md: 8, xl: 12 }} my={4}>
           {PROJECTS.map(({ logo, heading, desc, thumbnail, url }, idx) => (
-            <Grid key={idx} item xs={4} sm={4} md={4}>
+            <Grid key={idx} item xs={4} md={4} xl={4}>
               <Box data-aos="fade-up" data-aos-delay={idx * 100}>
                 <Card
                   logo={logo}

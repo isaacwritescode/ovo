@@ -14,7 +14,7 @@ export const FooterMiddle = () => {
   const md = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Grid container columns={{ xs: 3, sm: 6, md: 12 }} spacing={md && 4}>
+    <Grid container columns={{ xs: 3, sm: 6, md: 12 }} spacing={md ? 4 : 0}>
       <Grid item xs={3} sx={{ paddingLeft: "0 !important" }}>
         <Stack spacing={2} pb={6}>
           <Link

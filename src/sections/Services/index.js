@@ -6,10 +6,10 @@ import { SERVICES } from "./constants";
 
 export const Services = () => {
   const theme = useTheme();
-  const md = useMediaQuery(theme.breakpoints.up("md"));
+  const lg = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
-    <Stack width={md ? "75%" : "90%"} py={12} maxWidth={1400} m="auto">
+    <Stack width={lg ? "75%" : "90%"} py={12} maxWidth={1400} m="auto">
       <Header
         title="services"
         heading="Startups, Shopify brands, Small businesses experience more conversions with OVO"
