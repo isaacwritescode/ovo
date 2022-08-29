@@ -30,7 +30,7 @@ export const FooterMiddle = () => {
           </Typography>
           <SocialLinks />
           <Typography variant="body1" color="text.secondary">
-            © Copyright Avian Studios, Inc. All Rights Reserved.
+            ©2022 OVO Agency. <br /> All Rights Reserved
           </Typography>
         </Stack>
       </Grid>

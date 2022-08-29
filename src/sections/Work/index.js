@@ -26,7 +26,7 @@ export const Work = () => {
             >
               Get a taste of what we do & how we do it
             </Typography>
-            <Typography variant={md ? "body1" : "body2"} color="text.secondary">
+            <Typography variant="body1" color="text.secondary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Typography>

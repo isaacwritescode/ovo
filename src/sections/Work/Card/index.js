@@ -38,7 +38,7 @@ export const Card = ({ logo, thumbnail, heading, desc, url }) => {
           <Typography variant="h6" fontWeight={600} color="white.main">
             {heading}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body1" color="text.secondary">
             {desc}
           </Typography>
         </Stack>

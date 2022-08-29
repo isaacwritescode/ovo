@@ -26,7 +26,7 @@ export const Content = () => {
           maxWidth={700}
         >
           <Typography
-            variant={md ? "body1" : "body2"}
+            variant="body1"
             fontWeight={600}
             lineHeight={1}
             textTransform="uppercase"
@@ -42,12 +42,12 @@ export const Content = () => {
             Designing experiences that convert
           </Typography>
           <Typography
-            variant={md ? "body1" : "body2"}
+            variant="body1"
             color="text.secondary"
             width="80%"
           >
             We help build brands that make an impact & boost conversions with
-            state-of-the art web solutions
+            state of the art web solutions
           </Typography>
         </Stack>
         <Box data-aos="fade-up" data-aos-delay={400}>

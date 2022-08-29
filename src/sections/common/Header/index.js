@@ -30,7 +30,7 @@ export const Header = ({ title, heading, desc, type, maxWidth, mb, cta }) => {
             {heading}
           </Typography>
           <Typography
-            variant={md ? "body1" : "body2"}
+            variant="body1"
             color="text.secondary"
             width="80%"
           >
@@ -64,7 +64,7 @@ export const Header = ({ title, heading, desc, type, maxWidth, mb, cta }) => {
         {heading}
       </Typography>
       <Typography
-        variant={md ? "body1" : "body2"}
+        variant="body1"
         color="text.secondary"
         width="80%"
       >
