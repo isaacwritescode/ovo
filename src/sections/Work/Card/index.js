@@ -1,9 +1,17 @@
 import { Launch } from "@mui/icons-material";
-import { Box, Button, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { Stack } from "@mui/system";
 import { Link } from "../../common/Link";
 
 export const Card = ({ logo, thumbnail, heading, desc, url }) => {
+  const theme = useTheme();
+  const md = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Stack
       width="100%"
@@ -38,7 +46,7 @@ export const Card = ({ logo, thumbnail, heading, desc, url }) => {
           <Typography variant="h6" fontWeight={600} color="white.main">
             {heading}
           </Typography>
-          <Typography variant="body1" color="text.secondary">
+          <Typography variant={md ? "body2" : "caption"} color="text.secondary">
             {desc}
           </Typography>
         </Stack>

@@ -17,14 +17,14 @@ export const PROJECTS = [
     logo: "/media/images/projects/dysforia/logo.png",
     thumbnail: "/media/images/projects/dysforia/thumbnail.png",
     heading: "Dysforia",
-    desc: "Customizable Anime Merch",
+    desc: "Anime Merch",
     url: "",
   },
   {
     logo: "/media/images/projects/turbo/logo.png",
     thumbnail: "/media/images/projects/turbo/thumbnail.png",
     heading: "Turbo",
-    desc: "Google Chrome Extension",
+    desc: "Chrome Extension",
     url: "https://turboformeet.netlify.app",
   },
   {
@@ -38,7 +38,7 @@ export const PROJECTS = [
     logo: "/media/images/projects/souza-lopes-comforts/logo.png",
     thumbnail: "/media/images/projects/souza-lopes-comforts/thumbnail.png",
     heading: "SL Comforts",
-    desc: "Guesthouse website",
+    desc: "Guesthouse",
     url: "https://souzalopescomforts.com",
   },
   {
