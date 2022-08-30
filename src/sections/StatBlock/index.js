@@ -43,8 +43,9 @@ export const StatBlock = () => {
                   flex={1}
                 >
                   <CountUp
-                    start={viewPortEntered ? null : value - (value / 100) * 50}
+                    start={viewPortEntered ? null : 0}
                     end={value}
+                    duration={1}
                     onEnd={() => (viewPortEntered ? setOnCountUpEnd(true) : "")}
                     decimals={decimal}
                   >
@@ -68,7 +69,7 @@ export const StatBlock = () => {
                   <Typography
                     variant="body1"
                     textTransform="capitalize"
-                    color="#617e83"
+                    color="grey.400"
                     width="80%"
                   >
                     {camelCaseToSentance(key)}
@@ -77,11 +78,17 @@ export const StatBlock = () => {
                 {idx < Object.entries(PROJECT_STATS).length - 1 &&
                   (sm ? (
                     <List>
-                      <Divider color="grey" orientation="vertical" />
+                      <Divider
+                        sx={{ borderColor: "#ffffff50" }}
+                        orientation="vertical"
+                      />
                     </List>
                   ) : (
                     <List sx={{ width: "80%", my: 4, mx: "auto" }}>
-                      <Divider color="grey" orientation="horizontal" />
+                      <Divider
+                        sx={{ borderColor: "#ffffff50" }}
+                        orientation="horizontal"
+                      />
                     </List>
                   ))}
               </Fragment>

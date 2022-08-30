@@ -1,5 +1,5 @@
 import { useTheme } from "@emotion/react";
-import { Grid, Stack, useMediaQuery } from "@mui/material";
+import { Box, Grid, Stack, useMediaQuery } from "@mui/material";
 import { Content } from "./Content";
 import { ImageView } from "./ImageView";
 
@@ -29,8 +29,10 @@ export const Hero = () => {
         <Grid item xs={6}>
           <Content />
         </Grid>
-        <Grid item xs={6}>
-          <ImageView />
+        <Grid item xs={6} width="100%">
+          <Box data-aos="fade-up" data-aos-delay={200}>
+            <ImageView />
+          </Box>
         </Grid>
       </Grid>
     </Stack>

@@ -46,7 +46,7 @@ export const Content = () => {
             state of the art web solutions
           </Typography>
         </Stack>
-        <Box data-aos="fade-up" data-aos-delay={400}>
+        <Box data-aos="fade-up" data-aos-delay={200}>
           <Link
             path=""
             component={

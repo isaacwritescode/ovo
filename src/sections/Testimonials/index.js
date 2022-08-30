@@ -14,7 +14,6 @@ export const Testimonials = () => {
     <Stack width="100%" py={12} bgcolor="#f2f3f5">
       <Stack
         width={lg ? "75%" : "90%"}
-        alignItems="start"
         m="auto"
         gap={4}
         maxWidth={1275}
@@ -28,7 +27,7 @@ export const Testimonials = () => {
           mb={md ? 8 : 4}
         />
 
-        <Masonry columns={xl ? 3 : md ? 2 : 1} spacing={2}>
+        <Masonry columns={xl ? 3 : md ? 2 : 1} spacing={md ? 2 : 0}>
           {TESTIMONIALS.map(({ name, occupation, review, image }, idx) => (
             <Card
               key={idx}

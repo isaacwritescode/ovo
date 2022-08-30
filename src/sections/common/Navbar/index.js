@@ -34,7 +34,7 @@ export const Navbar = ({
 
         "@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))":
         {
-          backgroundColor: "rgba(255, 255, 255, .7)",
+          backgroundColor: "rgba(255, 255, 255, .8)",
           backdropFilter: "blur(2em)",
         },
       }}
