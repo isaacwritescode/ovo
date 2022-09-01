@@ -12,12 +12,7 @@ export const Testimonials = () => {
 
   return (
     <Stack width="100%" py={12} bgcolor="#f2f3f5">
-      <Stack
-        width={lg ? "75%" : "90%"}
-        m="auto"
-        gap={4}
-        maxWidth={1275}
-      >
+      <Stack width={lg ? "75%" : "90%"} m="auto" gap={4} maxWidth={1275}>
         <Header
           title="Testimonials"
           heading="Don’t just take our word for it,
@@ -27,7 +22,11 @@ export const Testimonials = () => {
           mb={md ? 8 : 4}
         />
 
-        <Masonry columns={xl ? 3 : md ? 2 : 1} spacing={md ? 2 : 0}>
+        <Masonry
+          columns={xl ? 3 : md ? 2 : 1}
+          spacing={md ? 2 : 0}
+          sx={{ "& > *": { ml: 0, mb: md ? 0 : 2 } }}
+        >
           {TESTIMONIALS.map(({ name, occupation, review, image }, idx) => (
             <Card
               key={idx}

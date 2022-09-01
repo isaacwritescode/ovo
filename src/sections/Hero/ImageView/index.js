@@ -13,6 +13,12 @@ export const ImageView = () => {
         onLoad={() => setImgLoaded(true)}
         style={{ borderRadius: "12px", maxWidth: "100%" }}
       />
+      <img
+        src="/media/images/illus/card.svg"
+        width="50%"
+        alt=""
+        style={{ position: "absolute", bottom: 24, left: 24 }}
+      />
       <Box
         width="100%"
         bgcolor="grey.200"

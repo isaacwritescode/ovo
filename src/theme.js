@@ -79,8 +79,42 @@ const theme = createTheme({
       main: "#ffffff",
       contrastText: "#000000",
     },
+    blue: {
+      main: "#0083FF",
+      contrastText: "#ffffff",
+    },
+    turquoise:{
+      main: "#4dcdcb",
+      contrastText: "#6e97bf"
+    },
     black: {
       main: "#000000",
+      contrastText: "#ffffff",
+    },
+    orange: {
+      main: "#F5883A",
+      contrastText: "#ffffff",
+    },
+    green: {
+      main: "#52CC99",
+      contrastText: "#ffffff",
+    },
+    indigo: {
+      main: "#6666FF",
+      contrastText: "#ffffff",
+    },
+    red: {
+      main: "#EF466F",
+      light: "#f26b8c",
+      extraLight: "#F6C4D1",
+      contrastText: "#ffffff",
+    },
+    purple: {
+      main: "#B15FFC",
+      contrastText: "#ffffff",
+    },
+    skyBlue: {
+      main: "#35C0FC",
       contrastText: "#ffffff",
     },
     text: {

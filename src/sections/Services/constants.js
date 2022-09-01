@@ -10,37 +10,37 @@ import {
 export const SERVICES = [
   {
     icon: <SearchStatus />,
-    color: "#F05A3C",
+    color: "orange.main",
     heading: "Search Engine Optimization",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
   },
   {
     icon: <Chart />,
-    color: "#00C6D3",
+    color: "green.main",
     heading: "Web Analytics",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
   },
   {
     icon: <Monitor />,
-    color: "#356FFC",
+    color: "indigo.main",
     heading: "Web Development",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
   },
   {
     icon: <Colorfilter />,
-    color: "#D8335B",
+    color: "red.main",
     heading: "Branding",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
   },
   {
     icon: <Personalcard />,
-    color: "#C837AB",
+    color: "purple.main",
     heading: "E-Business Cards",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
   },
   {
     icon: <Task />,
-    color: "#35C0FC",
+    color: "skyBlue.main",
     heading: "Testing",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
   },
