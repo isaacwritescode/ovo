@@ -5,7 +5,7 @@ import RocketAnim from "../../../../lottie/rocket.json";
 
 export const Rocket = () => {
   return (
-    <Box data-aos="zoom-in">
+    <Box data-sal="zoom-in">
       <Box
         wodth="100%"
         height="100%"

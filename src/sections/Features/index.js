@@ -27,7 +27,7 @@ export const Features = () => {
                 columns={{ xs: 6, md: 12 }}
               >
                 <Grid item xs={6}>
-                  <Box key={idx} data-aos="fade-up">
+                  <Box key={idx} data-sal="fade-up">
                     <Stack spacing={1} alignItems="start" mb={{ xs: 4, md: 0 }}>
                       <Chip
                         label={title}

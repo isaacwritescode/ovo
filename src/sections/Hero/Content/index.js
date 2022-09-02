@@ -14,7 +14,7 @@ export const Content = () => {
 
   return (
     <Stack spacing={4} alignItems="start">
-      <Box data-aos="fade-up" width="80%">
+      <Box data-sal="fade-up" width="80%">
         <Stack
           alignItems="start"
           justifyContent="center"
@@ -46,7 +46,7 @@ export const Content = () => {
           </Typography>
         </Stack>
       </Box>
-      <Box data-aos="fade-up" data-aos-delay={200}>
+      <Box data-sal="fade-up" data-sal-delay={200}>
         <Link
           path=""
           component={

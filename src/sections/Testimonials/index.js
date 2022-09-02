@@ -20,13 +20,15 @@ export const Testimonials = () => {
           <Box width="100%">
             <Masonry columns={{ xl: 3, md: 2, xs: 1 }} spacing={2}>
               {TESTIMONIALS.map(({ name, occupation, review, image }, idx) => (
-                <Card
-                  key={idx}
-                  name={name}
-                  occupation={occupation}
-                  review={review}
-                  image={image}
-                />
+                <Box key={idx} data-sal="fade-up">
+                  <Card
+                    key={idx}
+                    name={name}
+                    occupation={occupation}
+                    review={review}
+                    image={image}
+                  />
+                </Box>
               ))}
             </Masonry>
           </Box>

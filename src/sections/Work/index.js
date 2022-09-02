@@ -17,7 +17,7 @@ export const Work = () => {
           justifyContent="space-between"
           spacing={4}
         >
-          <Stack maxWidth={520} spacing={2} data-aos="fade-up">
+          <Stack maxWidth={520} spacing={2} data-sal="fade-up">
             <Typography
               variant={md ? "h3" : "h4"}
               fontWeight={600}
@@ -32,7 +32,7 @@ export const Work = () => {
           </Stack>
           <Stack spacing={2} mr={6}>
             {CHECKLIST.map((elem, idx) => (
-              <Box key={idx} data-aos="fade-left" data-aos-delay={idx * 100}>
+              <Box key={idx} data-sal="fade-left" data-sal-delay={idx * 100}>
                 <Stack direction="row" spacing={2} alignItems="center">
                   <TickCircle size="32px" color="#2FBF7A" />
                   <Typography variant="h6" color="white.main">
@@ -46,7 +46,7 @@ export const Work = () => {
         <Grid container spacing={4} columns={{ xs: 4, md: 8, xl: 12 }} my={4}>
           {PROJECTS.map(({ logo, heading, desc, thumbnail, url }, idx) => (
             <Grid key={idx} item xs={4} md={4} xl={4}>
-              <Box data-aos="fade-up" data-aos-delay={idx * 100}>
+              <Box data-sal="fade-up" data-sal-delay={idx * 100}>
                 <Card
                   logo={logo}
                   heading={heading}

@@ -9,7 +9,7 @@ export const Header = ({ title, heading, desc, type, maxWidth, mb, cta }) => {
 
   return type === "page" ? (
     <Stack gap={4}>
-      <Box data-aos="fade-up">
+      <Box data-sal="fade-up">
         <Stack
           alignItems="start"
           justifyContent="start"
@@ -38,7 +38,7 @@ export const Header = ({ title, heading, desc, type, maxWidth, mb, cta }) => {
           </Typography>
         </Stack>
       </Box>
-      <Box data-aos="fade-up" data-aos-delay={200}>
+      <Box data-sal="fade-up" data-sal-delay={200}>
         {cta}
       </Box>
     </Stack>

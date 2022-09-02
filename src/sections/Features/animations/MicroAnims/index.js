@@ -30,7 +30,7 @@ export const MicroAnims = () => {
     <Grid container height="100%" width="100%" spacing={2}>
       {ANIMS.map(({ color, src }, idx) => (
         <Grid key={idx} item xs={6}>
-          <Box data-aos="zoom-in" data-aos-delay={idx * 100}>
+          <Box data-sal="zoom-in" data-sal-delay={idx * 100}>
             <Box
               bgcolor={color}
               borderRadius={3}

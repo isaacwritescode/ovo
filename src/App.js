@@ -5,10 +5,12 @@ import { useEffect, useState } from "react";
 import Home from "./pages/home";
 import Layout from "./pages/layout";
 import theme from "./theme";
-import { init, refresh } from "aos";
-import "aos/dist/aos.css";
+import sal from "sal.js";
+import "sal.js/dist/sal.css";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const { pathname } = useLocation();
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [userHasScrolled, setUserHasScrolled] = useState(false);
   useEffect(() => {
@@ -25,12 +27,8 @@ function App() {
   });
 
   useEffect(() => {
-    init({
-      once: true,
-      duration: 1000
-    });
-    refresh();
-  }, []);
+    sal();
+  }, [pathname]);
 
   return (
     <HelmetProvider>

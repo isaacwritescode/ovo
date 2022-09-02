@@ -2,13 +2,7 @@ import { camelCaseToSentance } from "../../utils/camelCaseToSentance";
 import { PROJECT_STATS } from "./constants";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-import {
-  Divider,
-  List,
-  Stack,
-  Typography,
-  useMediaQuery,
-} from "@mui/material";
+import { Divider, List, Stack, Typography, useMediaQuery } from "@mui/material";
 import { Fragment, useState } from "react";
 import { Box } from "@mui/system";
 import { useTheme } from "@emotion/react";
@@ -19,7 +13,7 @@ export const StatBlock = () => {
   const [viewPortEntered, setViewPortEntered] = useState(false);
   const [onCountUpEnd, setOnCountUpEnd] = useState(false);
   return (
-    <Box width="100%" bgcolor="black.main">
+    <Box width="100%" bgcolor="black.main" py={8}>
       <VisibilitySensor
         active={!viewPortEntered}
         onChange={(isVisible) => {
@@ -29,7 +23,7 @@ export const StatBlock = () => {
         }}
         delayedCall
       >
-        <Box py={8} width={{ xs: "90%", lg: "75%" }} maxWidth={1400} m="auto">
+        <Box width={{ xs: "90%", lg: "75%" }} maxWidth={1400} m="auto">
           <Stack
             justifyContent="space-between"
             alignItems="center"

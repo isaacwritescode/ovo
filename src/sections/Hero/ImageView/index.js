@@ -5,7 +5,7 @@ export const ImageView = () => {
   const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
-    <Box position="relative" data-aos="fade-up" data-aos-delay={200}>
+    <Box position="relative" data-sal="fade-up" data-sal-delay={600}>
       <img
         src="/media/images/illus/hero.png"
         className={imgLoaded ? "visible" : "invisible"}

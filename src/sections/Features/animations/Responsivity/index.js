@@ -12,7 +12,7 @@ export const Responsivity = () => {
       borderRadius={3}
       sx={{ aspectRatio: "1/1", pointerEvents: "none" }}
     >
-      <Box data-aos="zoom-in">
+      <Box data-sal="zoom-in">
         <Lottie
           options={{ animationData: ResponsivityAnim }}
           height="100%"

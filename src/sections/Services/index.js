@@ -17,7 +17,7 @@ export const Services = () => {
       <Grid container spacing={6} columns={{ xs: 4, sm: 8, md: 12 }}>
         {SERVICES.map(({ heading, icon, desc, color }, idx) => (
           <Grid key={idx} item xs={4} sm={4} md={4}>
-            <Box data-aos="fade-up" data-aos-delay={idx * 100}>
+            <Box data-sal="fade-up" data-sal-delay={idx * 100}>
               <Stack spacing={1}>
                 <Stack
                   bgcolor={color}

@@ -22,6 +22,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-visibility-sensor": "^5.1.1",
+    "sal.js": "^0.8.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

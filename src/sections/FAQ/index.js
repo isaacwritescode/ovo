@@ -39,7 +39,7 @@ export const FAQ = () => {
           />
         </Grid>
         <Grid item xs={6}>
-          <Box data-aos="fade-up" delay={200}>
+          <Box data-sal="fade-up" delay={200}>
             <AccordionGroup expanded={expanded} handleChange={handleChange} />
           </Box>
         </Grid>
