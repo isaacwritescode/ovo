@@ -28,9 +28,12 @@ export const NavLinkGroup = ({ links }) => {
                   height: "2px",
                   left: 0,
                   transition: "width 0.3s ease 0s, opacity 0.3s ease 0s",
-                  width: pathname === "/" + path ? "100%" : 0,
+                  width: 0,
                 },
-                "&:hover": { color: "text.primary" },
+                "&:hover": {
+                  color: "black.main",
+                  "&:after": { width: "100%" },
+                },
               }}
             >
               {title}

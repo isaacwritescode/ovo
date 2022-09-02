@@ -40,7 +40,7 @@ export const Card2 = () => {
         }}
         label="Website Redesign"
       />
-      <Stack spacing={2} width={sm ? "80%" : "100%"}>
+      <Stack spacing={2} width={{ xs: "100%", sm: "80%" }}>
         <Check variant="Bulk" color={theme.palette.blue.main} size="48px" />
         <Typography variant={xl ? "h2" : "h3"}>
           Is your website not performing well?

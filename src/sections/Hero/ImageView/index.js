@@ -1,11 +1,11 @@
-import { Stack, Box } from "@mui/system";
+import { Box } from "@mui/system";
 import { useState } from "react";
 
 export const ImageView = () => {
   const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
-    <Stack position="relative" alignItems="center" justifyContent="center">
+    <Box position="relative" data-aos="fade-up" data-aos-delay={200}>
       <img
         src="/media/images/illus/hero.png"
         className={imgLoaded ? "visible" : "invisible"}
@@ -28,6 +28,6 @@ export const ImageView = () => {
           borderRadius: "12px",
         }}
       />
-    </Stack>
+    </Box>
   );
 };

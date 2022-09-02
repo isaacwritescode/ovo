@@ -41,7 +41,7 @@ export const Card1 = () => {
         }}
         label="Recommended"
       />
-      <Stack spacing={2} width={sm ? "80%" : "100%"}>
+      <Stack spacing={2} width={{ xs: "100%", sm: "80%" }}>
         <CalendarAdd variant="Bulk" color="white" size="48px" />
         <Typography variant={xl ? "h2" : "h3"} color="white.main">
           Schedule a One on one call with us

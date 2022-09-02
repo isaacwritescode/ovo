@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material";
-import { blueGrey } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 
 const theme = createTheme({
   components: {
@@ -48,7 +48,7 @@ const theme = createTheme({
           },
         },
         outlined: {
-          borderColor: blueGrey[100],
+          borderColor: grey[300],
         },
         sizeLarge: {
           padding: "14px 28px",
@@ -83,9 +83,9 @@ const theme = createTheme({
       main: "#0083ff",
       contrastText: "#ffffff",
     },
-    turquoise:{
+    turquoise: {
       main: "#4dcdcb",
-      contrastText: "#6e97bf"
+      contrastText: "#6e97bf",
     },
     black: {
       main: "#000000",
@@ -119,12 +119,12 @@ const theme = createTheme({
     },
     text: {
       primary: "#000000",
-      secondary: blueGrey[300],
+      secondary: grey[500],
     },
     gradient: {
       orangePink: "linear-gradient(90deg, #C98530 3.95%, #F02864 100.2%)",
     },
-    grey: blueGrey,
+    grey,
   },
   breakpoints: {
     values: {

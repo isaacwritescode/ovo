@@ -7,10 +7,14 @@ export const Connect = () => {
     <Box width={{ xs: "90%", lg: "75%" }} m="auto" maxWidth={1400}>
       <Grid container py={8} spacing={4} columns={{ xs: 6, lg: 12 }}>
         <Grid item xs={6}>
-          <Card1 />
+          <Box data-aos="flip-up">
+            <Card1 />
+          </Box>
         </Grid>
         <Grid item xs={6}>
-          <Card2 />
+          <Box data-aos="flip-up" data-aos-delay={200}>
+            <Card2 />
+          </Box>
         </Grid>
       </Grid>
     </Box>

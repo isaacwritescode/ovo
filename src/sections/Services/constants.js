@@ -9,6 +9,12 @@ import {
 
 export const SERVICES = [
   {
+    icon: <Colorfilter />,
+    color: "red.main",
+    heading: "Branding",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+  },
+  {
     icon: <SearchStatus />,
     color: "orange.main",
     heading: "Search Engine Optimization",
@@ -24,12 +30,6 @@ export const SERVICES = [
     icon: <Monitor />,
     color: "indigo.main",
     heading: "Web Development",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  },
-  {
-    icon: <Colorfilter />,
-    color: "red.main",
-    heading: "Branding",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
   },
   {

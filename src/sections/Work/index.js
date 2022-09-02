@@ -7,14 +7,13 @@ import { Card } from "./Card";
 
 export const Work = () => {
   const theme = useTheme();
-  const lg = useMediaQuery(theme.breakpoints.up("lg"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Stack bgcolor="black.main" width="100%" py={12} alignItems="center" overflow="hidden">
-      <Stack maxWidth={1400} width={lg ? "75%" : "90%"}>
+    <Box bgcolor="black.main" width="100%" py={12} overflow="hidden">
+      <Box maxWidth={1400} width={{ xs: "90%", lg: "75%" }} m="auto">
         <Stack
-          direction={lg ? "row" : "column"}
+          direction={{ xs: "column", lg: "row" }}
           justifyContent="space-between"
           spacing={4}
         >
@@ -34,7 +33,7 @@ export const Work = () => {
           <Stack spacing={2} mr={6}>
             {CHECKLIST.map((elem, idx) => (
               <Box key={idx} data-aos="fade-left" data-aos-delay={idx * 100}>
-                <Stack direction="row" gap={2} alignItems="center">
+                <Stack direction="row" spacing={2} alignItems="center">
                   <TickCircle size="32px" color="#2FBF7A" />
                   <Typography variant="h6" color="white.main">
                     {elem}
@@ -59,7 +58,7 @@ export const Work = () => {
             </Grid>
           ))}
         </Grid>
-      </Stack>
-    </Stack>
+      </Box>
+    </Box>
   );
 };
