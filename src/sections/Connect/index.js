@@ -5,7 +5,7 @@ import { Card2 } from "./Card2";
 export const Connect = () => {
   return (
     <Box
-      width={{ xs: "100%", thin: "90%", lg: "75%" }}
+      width={{ xs: "100%", sm: "90%", lg: "75%" }}
       m="auto"
       maxWidth={1400}
     >

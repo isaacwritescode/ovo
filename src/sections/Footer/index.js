@@ -1,13 +1,8 @@
-import {
-  Divider,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Divider, Stack, Typography } from "@mui/material";
 import { FooterMiddle } from "./FooterMiddle";
 import { Button, Box } from "@mui/material";
 
 export const Footer = () => {
-
   return (
     <Box
       width={{ xs: "90%", lg: "75%" }}
@@ -20,7 +15,7 @@ export const Footer = () => {
           justifyContent="space-between"
           direction={{ xs: "column", md: "row" }}
           alignItems={{ xs: "start", md: "center" }}
-          spacing={{ md: 4 }}
+          spacing={{ xs: 4, md: 0 }}
         >
           <Typography variant="h3" fontWeight={600} maxWidth={480}>
             Ready to improve your online presence?
