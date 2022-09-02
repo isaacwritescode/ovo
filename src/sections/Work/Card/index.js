@@ -22,9 +22,10 @@ export const Card = ({ logo, thumbnail, heading, desc, url }) => {
       <img src={thumbnail} alt="" width="100%" />
 
       <Stack
-        direction="row"
+        direction={{ xs: "column", thin: "row" }}
         justifyContent="space-between"
-        alignItems="center"
+        alignItems={{ xs: "start", thin: "center" }}
+        gap={2}
         p={4}
         bgcolor="#ffffff10"
         position="relative"

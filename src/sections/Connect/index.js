@@ -4,17 +4,17 @@ import { Card2 } from "./Card2";
 
 export const Connect = () => {
   return (
-    <Box width={{ xs: "90%", lg: "75%" }} m="auto" maxWidth={1400}>
+    <Box
+      width={{ xs: "100%", thin: "90%", lg: "75%" }}
+      m="auto"
+      maxWidth={1400}
+    >
       <Grid container py={8} spacing={4} columns={{ xs: 6, lg: 12 }}>
         <Grid item xs={6}>
-          <Box data-sal="flip-up" data-sal-duration={1000}>
-            <Card1 />
-          </Box>
+          <Card1 />
         </Grid>
         <Grid item xs={6}>
-          <Box data-sal="flip-up" data-sal-delay={200} data-sal-duration={1000}>
-            <Card2 />
-          </Box>
+          <Card2 />
         </Grid>
       </Grid>
     </Box>

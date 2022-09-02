@@ -18,7 +18,7 @@ export const Card1 = () => {
       width="100%"
       borderRadius={4}
       boxSizing="border-box"
-      p={5}
+      p={{ xs: 2, thin: 5 }}
       spacing={4}
       alignItems="start"
       overflow="hidden"
@@ -40,7 +40,7 @@ export const Card1 = () => {
         }}
         label="Recommended"
       />
-      <Stack spacing={2} width={{xs: "100%" ,sm : "80%"}}>
+      <Stack spacing={2} width={{ xs: "100%", sm: "80%" }}>
         <CalendarAdd variant="Bulk" color="white" size="48px" />
         <Typography variant={xl ? "h2" : "h3"} color="white.main">
           Schedule a One on one call with us

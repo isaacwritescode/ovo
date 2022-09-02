@@ -18,7 +18,7 @@ export const Card2 = () => {
       width="100%"
       borderRadius={4}
       boxSizing="border-box"
-      p={5}
+      p={{ xs: 2, thin: 5 }}
       spacing={4}
       justifyContent="start"
       alignItems="start"
