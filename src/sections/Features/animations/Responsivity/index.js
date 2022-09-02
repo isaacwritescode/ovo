@@ -10,13 +10,15 @@ export const Responsivity = () => {
       height="100%"
       bgcolor="red.extraLight"
       borderRadius={3}
-      sx={{ aspectRatio: "1/1" }}
+      sx={{ aspectRatio: "1/1", pointerEvents: "none" }}
     >
-      <Lottie
-        options={{ animationData: ResponsivityAnim }}
-        height="100%"
-        width="100%"
-      />
+      <Box data-aos="zoom-in">
+        <Lottie
+          options={{ animationData: ResponsivityAnim }}
+          height="100%"
+          width="100%"
+        />
+      </Box>
     </Box>
   );
 };

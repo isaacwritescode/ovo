@@ -5,7 +5,6 @@ import VisibilitySensor from "react-visibility-sensor";
 import {
   Divider,
   List,
-  ListItem,
   Stack,
   Typography,
   useMediaQuery,

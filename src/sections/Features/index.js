@@ -17,17 +17,17 @@ export const Features = () => {
           />
           {FEATURES.map(({ color, title, heading, desc, anim }, idx) => (
             <Box py={{ xs: 2, md: 8 }}>
-              <Box key={idx} data-aos="fade-up" data-aos-delay={idx * 100}>
-                <Grid
-                  container
-                  width="100%"
-                  justifyContent="center"
-                  alignItems="center"
-                  direction={idx % 2 ? "row" : "row-reverse"}
-                  spacing={{ md: 8 }}
-                  columns={{ xs: 6, md: 12 }}
-                >
-                  <Grid item xs={6}>
+              <Grid
+                container
+                width="100%"
+                justifyContent="center"
+                alignItems="center"
+                direction={idx % 2 ? "row" : "row-reverse"}
+                spacing={{ md: 8 }}
+                columns={{ xs: 6, md: 12 }}
+              >
+                <Grid item xs={6}>
+                  <Box key={idx} data-aos="fade-up">
                     <Stack spacing={1} alignItems="start" mb={{ xs: 4, md: 0 }}>
                       <Chip
                         label={title}
@@ -44,12 +44,12 @@ export const Features = () => {
                         {desc}
                       </Typography>
                     </Stack>
-                  </Grid>
-                  <Grid item xs={6}>
-                    {anim}
-                  </Grid>
+                  </Box>
                 </Grid>
-              </Box>
+                <Grid item xs={6}>
+                  {anim}
+                </Grid>
+              </Grid>
             </Box>
           ))}
         </Stack>

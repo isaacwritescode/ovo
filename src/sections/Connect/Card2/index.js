@@ -12,7 +12,6 @@ import { Check } from "iconsax-react";
 export const Card2 = () => {
   const theme = useTheme();
   const xl = useMediaQuery(theme.breakpoints.up("xl"));
-  const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
     <Stack

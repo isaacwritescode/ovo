@@ -5,12 +5,14 @@ import WebpageAnim from "../../../../lottie/web-page.json";
 
 export const Webpage = () => {
   return (
-    <Box height="100%" width="100%">
-      <Lottie
-        options={{ animationData: WebpageAnim }}
-        height="100%"
-        width="100%"
-      />
+    <Box data-aos="zoom-in">
+      <Box height="100%" width="100%" sx={{ pointerEvents: "none" }}>
+        <Lottie
+          options={{ animationData: WebpageAnim }}
+          height="100%"
+          width="100%"
+        />
+      </Box>
     </Box>
   );
 };

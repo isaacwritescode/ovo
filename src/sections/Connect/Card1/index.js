@@ -12,7 +12,6 @@ import { CalendarAdd } from "iconsax-react";
 export const Card1 = () => {
   const theme = useTheme();
   const xl = useMediaQuery(theme.breakpoints.up("xl"));
-  const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
     <Stack
@@ -41,7 +40,7 @@ export const Card1 = () => {
         }}
         label="Recommended"
       />
-      <Stack spacing={2} width={{ xs: "100%", sm: "80%" }}>
+      <Stack spacing={2} width={{xs: "100%" ,sm : "80%"}}>
         <CalendarAdd variant="Bulk" color="white" size="48px" />
         <Typography variant={xl ? "h2" : "h3"} color="white.main">
           Schedule a One on one call with us
