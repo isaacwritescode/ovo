@@ -7,6 +7,7 @@ import { Work } from "../sections/Work";
 import { Testimonials } from "../sections/Testimonials";
 import { Footer } from "../sections/Footer";
 import { Features } from "../sections/Features";
+import { Connect } from "../sections/Connect";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Features />
       <Work />
       <FAQ />
+      <Connect />
       <Testimonials />
       <Footer />
     </>

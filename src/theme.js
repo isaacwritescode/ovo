@@ -80,7 +80,7 @@ const theme = createTheme({
       contrastText: "#000000",
     },
     blue: {
-      main: "#0083FF",
+      main: "#0083ff",
       contrastText: "#ffffff",
     },
     turquoise:{
