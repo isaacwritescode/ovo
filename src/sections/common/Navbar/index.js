@@ -44,7 +44,7 @@ export const Navbar = ({
         justifyContent="space-between"
         alignItems="center"
         width="90%"
-        height="65px"
+        height="60px"
         m="auto"
         maxWidth={1400}
       >

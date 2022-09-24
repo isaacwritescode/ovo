@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Navbar } from "../sections/common/Navbar";
+import { Footer } from "../sections/Footer";
 
 export default function Layout({
   isMenuVisible,
@@ -14,6 +15,7 @@ export default function Layout({
         userHasScrolled={userHasScrolled}
       />
       <Outlet />
+      <Footer />
     </>
   );
 }

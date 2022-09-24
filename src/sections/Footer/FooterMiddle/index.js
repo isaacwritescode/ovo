@@ -28,7 +28,7 @@ export const FooterMiddle = () => {
         </Grid>
         {Object.keys(FOOTER_LINKS).map((category, idx) => (
           <Grid item xs={3} key={idx}>
-            <Stack spacing={3}>
+            <Stack spacing={3} pb={{ xs: 8, md: 0 }}>
               <Typography variant="h6" textTransform="capitalize">
                 {category}
               </Typography>

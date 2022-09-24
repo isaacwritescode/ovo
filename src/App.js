@@ -8,6 +8,7 @@ import theme from "./theme";
 import sal from "sal.js";
 import "sal.js/dist/sal.css";
 import { useLocation } from "react-router-dom";
+import { CaseStudy } from "./pages/case-study";
 
 function App() {
   const { pathname } = useLocation();
@@ -45,6 +46,7 @@ function App() {
             }
           >
             <Route index element={<Home />} />
+            <Route path="/case-studies/:slug" element={<CaseStudy />} />
           </Route>
         </Routes>
       </ThemeProvider>
