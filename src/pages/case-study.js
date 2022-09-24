@@ -43,17 +43,23 @@ export const CaseStudy = () => {
                 >
                   <Grid item xs={4}>
                     <Stack spacing={2} alignItems="start">
-                      <Box>
+                      <Box data-sal="fade-right" data-sal-delay={0}>
                         <Typography variant="h5">{title}</Typography>
                         <Typography variant="body1" color="text.secondary">
                           {longDesc}
                         </Typography>
                       </Box>
-                      <Button variant="contained" size="medium">
-                        Visit website
-                      </Button>
+                      <Box data-sal="fade-right" data-sal-delay={100}>
+                        <Button variant="contained" size="medium">
+                          Visit website
+                        </Button>
+                      </Box>
                       {Object.entries(info).map(([x, y], idx) => (
-                        <Box key={idx}>
+                        <Box
+                          key={idx}
+                          data-sal="fade-right"
+                          data-sal-delay={200 + 100 * idx}
+                        >
                           <Typography
                             variant="body1"
                             textTransform="capitalize"
@@ -66,17 +72,28 @@ export const CaseStudy = () => {
                         </Box>
                       ))}
                       <Box>
-                        <Typography variant="body1" textTransform="capitalize">
-                          Services Provided
-                        </Typography>
-                        {servicesProvided.map((elem, idx) => (
+                        <Box data-sal="fade-right" data-sal-delay={500}>
                           <Typography
-                            key={idx}
-                            variant="body2"
-                            color="text.secondary"
+                            variant="body1"
+                            textTransform="capitalize"
                           >
-                            - {elem}
+                            Services Provided
                           </Typography>
+                        </Box>
+                        {servicesProvided.map((elem, idx) => (
+                          <Box
+                            key={idx}
+                            data-sal="fade-right"
+                            data-sal-delay={600 + 100 * idx}
+                          >
+                            <Typography
+                              key={idx}
+                              variant="body2"
+                              color="text.secondary"
+                            >
+                              - {elem}
+                            </Typography>
+                          </Box>
                         ))}
                       </Box>
                     </Stack>
@@ -85,7 +102,11 @@ export const CaseStudy = () => {
                     <Box>
                       <Stack spacing={{ xs: 4, md: 8 }} mt={{ xs: 8, md: 0 }}>
                         {Object.entries(overview).map(([x, y], idx) => (
-                          <Box key={idx}>
+                          <Box
+                            key={idx}
+                            data-sal="fade-up"
+                            data-sal-delay={idx * 100}
+                          >
                             <Typography variant={md ? "h3" : "h4"}>
                               The {x}
                             </Typography>
@@ -113,18 +134,24 @@ export const CaseStudy = () => {
                             columns={{ xs: 6, md: 12 }}
                           >
                             <Grid item xs={6}>
-                              <img src={src} width="100%" alt={title} />{" "}
+                              <Box data-sal="fade-up" data-sal-delay={0}>
+                                <img src={src} width="100%" alt={title} />
+                              </Box>{" "}
                             </Grid>
                             <Grid item xs={6}>
-                              <img src={src2} width="100%" alt={title} />{" "}
+                              <Box data-sal="fade-up" data-sal-delay={100}>
+                                <img src={src2} width="100%" alt={title} />
+                              </Box>{" "}
                             </Grid>{" "}
                           </Grid>
                         </Box>
                       ) : (
-                        <img src={src} width="100%" alt={title} />
+                        <Box data-sal="fade-up" data-sal-delay={0}>
+                          <img src={src} width="100%" alt={title} />
+                        </Box>
                       )
                     ) : (
-                      <Box>
+                      <Box data-sal="fade-up" data-sal-delay={0}>
                         <Box width="85%" m="auto">
                           <Stack spacing={2}>
                             <Typography variant={md ? "h3" : "h4"}>
@@ -194,20 +221,22 @@ export const CaseStudy = () => {
                       </Grid>
                     </Box>
                   </VisibilitySensor>
-                  <Stack spacing={4}>
-                    <Typography variant="h4">“{content}.”</Typography>
-                    <Stack direction="row" spacing={4} alignItems="center">
-                      <img src={pfp} alt={author} width={92} />
-                      <Stack>
-                        <Typography variant="h5" fontWeight={600}>
-                          {author}
-                        </Typography>
-                        <Typography variant="h6" color="text.secondary">
-                          {designation}
-                        </Typography>
+                  <Box data-sal="fade-up" data-sal-delay={0}>
+                    <Stack spacing={4}>
+                      <Typography variant="h4">“{content}.”</Typography>
+                      <Stack direction="row" spacing={4} alignItems="center">
+                        <img src={pfp} alt={author} width={92} />
+                        <Stack>
+                          <Typography variant="h5" fontWeight={600}>
+                            {author}
+                          </Typography>
+                          <Typography variant="h6" color="text.secondary">
+                            {designation}
+                          </Typography>
+                        </Stack>
                       </Stack>
                     </Stack>
-                  </Stack>
+                  </Box>
                 </Stack>
               </Box>
             </Box>

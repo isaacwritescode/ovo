@@ -96,6 +96,17 @@ body {
   transform: translateX(0);
 }
 
+[data-sal|="fade-right"] {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-sal|="fade-right"].sal-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 [data-sal|="fade-up-left"] {
   opacity: 0;
   transform: translate(40px, 40px);
