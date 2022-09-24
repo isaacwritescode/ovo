@@ -1,6 +1,7 @@
 export const PROJECTS = {
   mitronbot: {
     banner: "/media/images/projects/mitron/case-study/banner.png",
+    bannerMob: "/media/images/projects/mitron/case-study/banner-mob.png",
     title: "Mitron",
     longDesc:
       "Mitron is a discord music bot with a bunch of amazing features like Connect Spotify, AI song suggestions, LoFi Radio & much more",
