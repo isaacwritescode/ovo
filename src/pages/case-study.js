@@ -31,7 +31,9 @@ export const CaseStudy = () => {
   return (
     <Box width="100%">
       <Stack spacing={8}>
-        <img src={banner} alt={`${title}-banner`} />
+        <Box data-sal="fade-in">
+          <img src={banner} alt={`${title}-banner`} width="100%" />
+        </Box>
         <Box>
           <Box maxWidth={1400} m="auto">
             <Box>

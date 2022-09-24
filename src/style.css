@@ -74,6 +74,15 @@ body {
   opacity: 0;
 }
 
+[data-sal|="fade-in"] {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+[data-sal|="fade-in"].sal-animate {
+  opacity: 1;
+}
+
 [data-sal|="fade-up"] {
   opacity: 0;
   transform: translateY(40px);

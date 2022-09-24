@@ -4,6 +4,7 @@ import { Link } from "../../Link";
 
 export const NavLinkGroup = ({ links }) => {
   const { pathname } = useLocation();
+  console.log(pathname);
   return (
     <Stack direction="row" spacing={4}>
       {links.map(({ title, url, path }, idx) => (
@@ -18,7 +19,9 @@ export const NavLinkGroup = ({ links }) => {
               sx={{
                 position: "relative",
                 color:
-                  pathname === "/" + path ? "text.primary" : "text.secondary",
+                  pathname === path || pathname.includes(path + "/")
+                    ? "text.primary"
+                    : "text.secondary",
                 "&:after": {
                   position: "absolute",
                   bgcolor: "black.main",

@@ -1,7 +1,7 @@
 export const NAVBAR_LINKS = [
   {
     title: "home",
-    path: "",
+    path: "/",
   },
   {
     title: "about",
