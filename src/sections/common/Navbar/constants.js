@@ -15,4 +15,8 @@ export const NAVBAR_LINKS = [
     title: "case studies",
     path: "/case-studies",
   },
+  {
+    title: "join us",
+    path: "/careers",
+  },
 ];

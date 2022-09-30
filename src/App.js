@@ -9,6 +9,7 @@ import sal from "sal.js";
 import "sal.js/dist/sal.css";
 import { useLocation } from "react-router-dom";
 import { CaseStudy } from "./pages/case-study";
+import { CaseStudies } from "./pages/case-studies";
 
 function App() {
   const { pathname } = useLocation();
@@ -28,7 +29,7 @@ function App() {
   });
 
   useEffect(() => {
-    sal();
+    sal({ threshold: 0.3 });
   }, [pathname]);
 
   return (
@@ -46,6 +47,7 @@ function App() {
             }
           >
             <Route index element={<Home />} />
+            <Route path="/case-studies" exact element={<CaseStudies />} />
             <Route path="/case-studies/:slug" element={<CaseStudy />} />
           </Route>
         </Routes>

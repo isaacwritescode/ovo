@@ -5,7 +5,6 @@ import { Services } from "../sections/Services";
 import { StatBlock } from "../sections/StatBlock";
 import { Work } from "../sections/Work";
 import { Testimonials } from "../sections/Testimonials";
-import { Footer } from "../sections/Footer";
 import { Features } from "../sections/Features";
 import { Connect } from "../sections/Connect";
 
@@ -23,7 +22,6 @@ export default function Home() {
       <FAQ />
       <Connect />
       <Testimonials />
-      <Footer />
     </>
   );
 }

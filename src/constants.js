@@ -1,8 +1,9 @@
 export const PROJECTS = {
-  mitronbot: {
+  mitron: {
     banner: "/media/images/projects/mitron/case-study/banner.png",
     bannerMob: "/media/images/projects/mitron/case-study/banner-mob.png",
     title: "Mitron",
+    desc: "Discord Music Bot",
     longDesc:
       "Mitron is a discord music bot with a bunch of amazing features like Connect Spotify, AI song suggestions, LoFi Radio & much more",
     website: "https://mitronbot.netlify.app",
@@ -137,5 +138,14 @@ export const PROJECTS = {
         pfp: "/media/images/projects/mitron/case-study/mitron-co-founder.png",
       },
     },
+  },
+  turbo: {
+    desc: "Google Meet Chrome extension",
+  },
+  dysforia: {
+    desc: "Customizable Anime Merch Brand",
+  },
+  mektro: {
+    desc: "Local Transport Network",
   },
 };
