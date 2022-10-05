@@ -43,7 +43,7 @@ export const Card = ({ logo, thumbnail, heading, desc, url }) => {
             }}
           />
         </Box>
-        <Stack spacing={0.5}>
+        <Stack>
           <Typography variant="h6" fontWeight={600} color="white.main">
             {heading}
           </Typography>

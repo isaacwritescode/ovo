@@ -9,8 +9,8 @@ export const ImageView = () => {
       <img
         src="/media/images/illus/hero.png"
         className={imgLoaded ? "visible" : "invisible"}
-        alt="illustration"
         onLoad={() => setImgLoaded(true)}
+        alt="illustration"
         style={{ borderRadius: "12px", maxWidth: "100%" }}
       />
       <img

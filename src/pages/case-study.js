@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet-async";
 export const CaseStudy = () => {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.up("md"));
+  const [bannerLoaded, setBannerLoaded] = useState(false);
   const [viewPortEntered, setViewPortEntered] = useState(false);
   const [onCountUpEnd, setOnCountUpEnd] = useState(false);
   const { slug } = useParams();
@@ -39,9 +40,19 @@ export const CaseStudy = () => {
         <Stack spacing={8}>
           <Box data-sal="fade-in">
             <img
+              className={bannerLoaded ? "visible" : "invisible"}
+              onLoad={() => setBannerLoaded(true)}
               src={md ? banner : bannerMob}
               alt={`${title}-banner`}
               width="100%"
+            />
+            <Box
+              width="100%"
+              bgcolor="grey.200"
+              className={bannerLoaded ? "invisible" : "visible"}
+              sx={{
+                aspectRatio: "1728/700",
+              }}
             />
           </Box>
           <Box>

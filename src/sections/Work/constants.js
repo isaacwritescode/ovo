@@ -7,17 +7,17 @@ export const CHECKLIST = [
 
 export const PROJECTS = [
   {
+    logo: "/media/images/projects/mitron/logo.png",
+    thumbnail: "/media/images/projects/mitron/thumbnail.png",
+    heading: "Mitron",
+    desc: "Discord Music Bot",
+    url: "https://mitronbot.netlify.app",
+  },
+  {
     logo: "/media/images/projects/mektro/logo.png",
     thumbnail: "/media/images/projects/mektro/thumbnail.png",
     heading: "Mektro",
     desc: "Bus Card Service",
-    url: "",
-  },
-  {
-    logo: "/media/images/projects/dysforia/logo.png",
-    thumbnail: "/media/images/projects/dysforia/thumbnail.png",
-    heading: "Dysforia",
-    desc: "Anime Merch",
     url: "",
   },
   {
@@ -28,11 +28,11 @@ export const PROJECTS = [
     url: "https://turboformeet.netlify.app",
   },
   {
-    logo: "/media/images/projects/mitron/logo.png",
-    thumbnail: "/media/images/projects/mitron/thumbnail.png",
-    heading: "Mitron",
-    desc: "Discord Music Bot",
-    url: "https://mitronbot.netlify.app",
+    logo: "/media/images/projects/dysforia/logo.png",
+    thumbnail: "/media/images/projects/dysforia/thumbnail.png",
+    heading: "Dysforia",
+    desc: "Anime Merch",
+    url: "",
   },
   {
     logo: "/media/images/projects/souza-lopes-comforts/logo.png",
