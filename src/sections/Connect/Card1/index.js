@@ -42,7 +42,7 @@ export const Card1 = () => {
       />
       <Stack spacing={2} width={{ xs: "100%", sm: "80%" }}>
         <CalendarAdd variant="Bulk" color="white" size="48px" />
-        <Typography variant={xl ? "h2" : "h3"} color="white.main">
+        <Typography variant={xl ? "h2" : "h3"} color="white.main" fontWeight={500}>
           Schedule a One on one call with us
         </Typography>
         <Typography variant="body1" color="white.main" sx={{ opacity: 0.7 }}>

@@ -1,29 +1,38 @@
+/* Fonts */
+
 @font-face {
-  font-family: "Gilroy-Private";
+  font-family: "NeurialGrotesk-Private";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/public/fonts/neurial-grotesk/NeurialGrotesk-Light.otf");
+}
+
+@font-face {
+  font-family: "NeurialGrotesk-Private";
   font-style: normal;
   font-weight: 400;
-  src: url("/public/fonts/Gilroy/Gilroy-Light.ttf");
+  src: url("/public/fonts/neurial-grotesk/NeurialGrotesk-Regular.otf");
 }
 
 @font-face {
-  font-family: "Gilroy-Private";
+  font-family: "NeurialGrotesk-Private";
   font-style: normal;
   font-weight: 500;
-  src: url("/public/fonts/Gilroy/Gilroy-Medium.ttf");
+  src: url("/public/fonts/neurial-grotesk/NeurialGrotesk-Medium.otf");
 }
 
 @font-face {
-  font-family: "Gilroy-Private";
+  font-family: "NeurialGrotesk-Private";
   font-style: normal;
   font-weight: 600;
-  src: url("/public/fonts/Gilroy/Gilroy-SemiBold.ttf");
+  src: url("/public/fonts/neurial-grotesk/NeurialGrotesk-Bold.otf");
 }
 
 @font-face {
-  font-family: "Gilroy-Private";
+  font-family: "NeurialGrotesk-Private";
   font-style: normal;
   font-weight: 700;
-  src: url("/public/fonts/Gilroy/Gilroy-Bold.ttf");
+  src: url("/public/fonts/neurial-grotesk/NeurialGrotesk-Extrabold.otf");
 }
 
 @font-face {

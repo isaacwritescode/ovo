@@ -1,5 +1,6 @@
 export const PROJECTS = {
   mitron: {
+    available: true,
     banner: "/media/images/projects/mitron/case-study/banner.png",
     bannerMob: "/media/images/projects/mitron/case-study/banner-mob.png",
     title: "Mitron",
@@ -139,13 +140,21 @@ export const PROJECTS = {
       },
     },
   },
-  turbo: {
-    desc: "Google Meet Chrome extension",
+  hypemash: {
+    available: false,
+    desc: "",
+    longDesc:
+      "Social marketing platform that allows music makers and content creators to create campaigns that can effectively reach their fanbase",
   },
-  dysforia: {
-    desc: "Customizable Anime Merch Brand",
-  },
-  mektro: {
+  flexibus: {
+    available: false,
     desc: "Local Transport Network",
+    longDesc: "A transport network startup aiming to provide easy & efficient flow of transit of passengers travelling via local transport",
+  },
+  dupside: {
+    available: false,
+    desc: "Personalised trendy wear",
+    longDesc:
+      "Get your own swanky anime merch and make it yours, with a wide range of customization, with our easy-to-use interface",
   },
 };

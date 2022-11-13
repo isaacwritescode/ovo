@@ -55,6 +55,7 @@ export const StatBlock = () => {
                             <Typography
                               ref={countUpRef}
                               variant="h3"
+                              fontWeight={500}
                               color="white.main"
                               textTransform="capitalize"
                             >

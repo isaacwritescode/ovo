@@ -41,7 +41,7 @@ export const Card2 = () => {
       />
       <Stack spacing={2} width={{ xs: "100%", sm: "80%" }}>
         <Check variant="Bulk" color={theme.palette.blue.main} size="48px" />
-        <Typography variant={xl ? "h2" : "h3"}>
+        <Typography variant={xl ? "h2" : "h3"} fontWeight={500}>
           Is your website not performing well?
         </Typography>
         <Typography variant="body1" sx={{ opacity: 0.7 }}>

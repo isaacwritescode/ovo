@@ -6,7 +6,7 @@ const theme = createTheme({
     MuiTypography: {
       styleOverrides: {
         root: {
-          fontWeight: 500,
+          fontWeight: 400,
           color: "#000000",
         },
         h1: {
@@ -47,8 +47,8 @@ const theme = createTheme({
             boxShadow: "none",
           },
         },
-        outlined: {
-          borderColor: grey[300],
+        disabled: {
+          color: "#000000",
         },
         sizeLarge: {
           padding: "14px 28px",
@@ -67,7 +67,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Gilroy-Private",
+    fontFamily: "NeurialGrotesk-Private",
   },
   palette: {
     mode: "light",
