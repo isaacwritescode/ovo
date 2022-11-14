@@ -5,8 +5,6 @@ import { Services } from "../sections/Services";
 import { StatBlock } from "../sections/StatBlock";
 import { Work } from "../sections/Work";
 import { Testimonials } from "../sections/Testimonials";
-import { Features } from "../sections/Features";
-import { Connect } from "../sections/Connect";
 
 export default function Home() {
   return (
@@ -17,10 +15,8 @@ export default function Home() {
       <Hero />
       <StatBlock />
       <Services />
-      <Features />
       <Work />
       <FAQ />
-      <Connect />
       <Testimonials />
     </>
   );

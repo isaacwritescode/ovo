@@ -1,64 +1,122 @@
-import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 import React from "react";
-import { CHECKLIST, PROJECTS } from "./constants";
-import { TickCircle } from "iconsax-react";
-import { Card } from "./Card";
+import { PROJECTS } from "../../constants";
+import { Link } from "../common/Link";
+import { Header } from "../common/Header";
+import { Masonry } from "@mui/lab";
 
 export const Work = () => {
-  const theme = useTheme();
-  const md = useMediaQuery(theme.breakpoints.up("md"));
-
   return (
-    <Box bgcolor="black.main" width="100%" py={12} overflow="hidden">
-      <Box maxWidth={1400} width={{ xs: "90%", lg: "75%" }} m="auto">
-        <Stack
-          direction={{ xs: "column", lg: "row" }}
-          justifyContent="space-between"
-          spacing={4}
+    <Box maxWidth={1400} m="auto" py={12} width={{ xs: "90%", md: "75%" }}>
+      <Stack spacing={8} alignItems="center">
+        <Header
+          title="CASE STUDIES"
+          heading="We've helped build brands by delivering seamless user experiences"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+          maxWidth={640}
+          mb={{ xs: 4, md: 8 }}
+        />
+        <Box width="100%">
+          <Masonry spacing={{ xs: 6 }} columns={{ xs: 1, sm: 2 }}>
+            {Object.entries(PROJECTS).map(
+              ([title, { longDesc, available }], idx) => {
+                return (
+                  <Box key={idx}>
+                    <Box data-sal="fade-up">
+                      <Stack spacing={3}>
+                        <Link
+                          path={available ? `/case-studies/${title}` : ""}
+                          component={
+                            <Box
+                              sx={{
+                                overflow: "hidden",
+                                "& img": {
+                                  cursor: "pointer",
+                                  transition: "all ease 0.3s",
+                                },
+                                "&:hover > img": {
+                                  transform: "scale(1.1)",
+                                },
+                              }}
+                            >
+                              <img
+                                src={`/media/images/projects/${title}/case-study/cover.png`}
+                                width="100%"
+                                alt={`${title}-cover`}
+                              />
+                            </Box>
+                          }
+                        />
+                        <Stack spacing={2}>
+                          <Box data-sal="fade-up">
+                            <Typography
+                              variant="h5"
+                              fontWeight={600}
+                              textTransform="capitalize"
+                              color="text.primary"
+                            >
+                              {title}
+                            </Typography>
+                          </Box>
+                          <Box data-sal="fade-up" data-sal-delay={100}>
+                            <Typography
+                              variant="body1"
+                              color="text.primary"
+                              fontWeight={300}
+                            >
+                              {longDesc}
+                            </Typography>
+                          </Box>
+                        </Stack>
+                        <Box data-sal="fade-up" data-sal-delay={200}>
+                          {available ? (
+                            <Link
+                              path={available ? `/case-studies/${title}` : ""}
+                              component={
+                                <Button
+                                  variant="outlined"
+                                  sx={{
+                                    width: "fit-content",
+                                    "&:hover": {
+                                      bgcolor: "black.main",
+                                      color: "white.main",
+                                    },
+                                  }}
+                                >
+                                  View project
+                                </Button>
+                              }
+                            />
+                          ) : (
+                            <Button
+                              variant="contained"
+                              disabled
+                              sx={{
+                                width: "fit-content",
+                              }}
+                            >
+                              Coming Soon
+                            </Button>
+                          )}
+                        </Box>
+                      </Stack>
+                    </Box>
+                  </Box>
+                );
+              }
+            )}
+          </Masonry>
+        </Box>
+        <Button
+          variant="contained"
+          size="large"
+          m="auto"
+          sx={{ textTransform: "capitalize" }}
         >
-          <Stack maxWidth={520} spacing={2} data-sal="fade-up">
-            <Typography
-              variant={md ? "h3" : "h4"}
-              fontWeight={600}
-              color="white.main"
-            >
-              Get a taste of what we do & how we do it
-            </Typography>
-            <Typography variant="body1" color="text.secondary">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Typography>
-          </Stack>
-          <Stack spacing={2} mr={6}>
-            {CHECKLIST.map((elem, idx) => (
-              <Box key={idx} data-sal="fade-left" data-sal-delay={idx * 100}>
-                <Stack direction="row" spacing={2} alignItems="center">
-                  <TickCircle size="32px" color="#2FBF7A" />
-                  <Typography variant="h6" color="white.main">
-                    {elem}
-                  </Typography>
-                </Stack>
-              </Box>
-            ))}
-          </Stack>
-        </Stack>
-        <Grid container spacing={4} columns={{ xs: 4, md: 8, xl: 12 }} my={4}>
-          {PROJECTS.map(({ logo, heading, desc, thumbnail, url }, idx) => (
-            <Grid key={idx} item xs={4} md={4} xl={4}>
-              <Box data-sal="fade-up" data-sal-delay={idx * 100}>
-                <Card
-                  logo={logo}
-                  heading={heading}
-                  desc={desc}
-                  thumbnail={thumbnail}
-                  url={url}
-                />
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
+          View all case studies
+        </Button>
+      </Stack>
     </Box>
   );
 };

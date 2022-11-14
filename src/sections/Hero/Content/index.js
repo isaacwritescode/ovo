@@ -36,7 +36,7 @@ export const Content = () => {
           <Typography
             variant={sm ? "h1" : "h2"}
             lineHeight={1}
-            fontWeight={600}
+            fontWeight={500}
           >
             We build experiences that convert
           </Typography>

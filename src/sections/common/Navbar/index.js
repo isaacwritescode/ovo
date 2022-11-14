@@ -93,6 +93,11 @@ export const Navbar = ({
         zIndex: 99,
         boxShadow: userHasScrolled && "0 0 50px rgb(23 92 255 / 10%)",
         transition: "all ease 0.3s",
+        "@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))":
+        {
+          backgroundColor: "rgba(255, 255, 255, .8)",
+          backdropFilter: "blur(2em)",
+        },
       }}
     >
       <Stack

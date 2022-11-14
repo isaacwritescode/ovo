@@ -27,7 +27,7 @@ export const Card = ({ name, occupation, review, image }) => {
         />
         <Chip color="primary" icon={<CheckCircle />} label="Verified Buyer" />
       </Stack>
-      <Typography variant="body2" fontWeight={400}>
+      <Typography variant="body2" fontWeight={400} color="rgba(0,0,0,0.7)">
         {review}
       </Typography>
     </Stack>
