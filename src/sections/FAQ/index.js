@@ -11,7 +11,7 @@ export const FAQ = () => {
   };
 
   return (
-    <Box bgcolor="white.main">
+    <Box bgcolor="purple.main">
       <Box width={{ xs: "90%", lg: "80%" }} py={16} maxWidth={1400} m="auto" >
         <Grid
           container
@@ -22,6 +22,7 @@ export const FAQ = () => {
         >
           <Grid item xs={6}>
             <Header
+              mode="dark"
               heading="Frequently Asked Questions"
               desc="Haven’t found what you’re looking for?"
               type="page"
@@ -30,7 +31,7 @@ export const FAQ = () => {
                 <Link
                   path="/contact-us"
                   component={
-                    <Button size="medium" variant="outlined">
+                    <Button size="medium" variant="contained" color="white" sx={{color: "purple.main"}}>
                       Contact us
                     </Button>
                   }

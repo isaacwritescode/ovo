@@ -4,7 +4,7 @@ import { FAQ_ITEMS } from "../constants";
 
 export const AccordionGroup = ({ handleChange, expanded }) => {
   return (
-    <Stack>
+    <Stack spacing={2}>
       {FAQ_ITEMS.map(({ title, desc }, idx) => (
         <Accordion
           key={idx}
