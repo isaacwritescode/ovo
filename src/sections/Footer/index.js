@@ -6,34 +6,38 @@ export const Footer = () => {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <Box
-      width={{ xs: "90%", lg: "80%" }}
-      maxWidth={1400}
-      m="auto"
-    >
-      <Stack py={14} spacing={8}>
-        <Stack
-          spacing={6}
-          alignItems="center"
-        >
-          <Typography
-            variant={sm ? "h1" : "h2"}
-            lineHeight={1}
-            fontWeight={500}
-            letterSpacing="-3px"
-            color="white.main"
+    <Box sx={{ background: "url(/media/images/illus/bg-inverted.png) bottom left no-repeat", backgroundSize: "cover" }}
+      width="100%"    >
+      <Box
+        width={{ xs: "90%", lg: "80%" }}
+        maxWidth={1400}
+        m="auto"
+      >
+        <Stack py={14} spacing={8}>
+          <Stack
+            spacing={6}
+            alignItems="center"
           >
-            Let's work together
-          </Typography>
-          <Button size="large" variant="contained" color="white">
-            Get in touch
-          </Button>
+            <Typography
+              variant={sm ? "h1" : "h2"}
+              lineHeight={1}
+              fontWeight={500}
+              letterSpacing="-3px"
+              color="white.main"
+            >
+              Let's work together
+            </Typography>
+            <Button size="large" variant="contained" color="white">
+              Get in touch
+            </Button>
+          </Stack>
+          <List>
+            <Divider sx={{ bgcolor: "#ffffff40" }} />
+          </List>
+          <FooterMiddle />
         </Stack>
-        <List>
-          <Divider sx={{ bgcolor: "#ffffff40" }} />
-        </List>
-        <FooterMiddle />
-      </Stack>
+      </Box>
     </Box>
+
   );
 };
