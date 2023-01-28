@@ -13,10 +13,11 @@ export const Work = () => {
         <Stack spacing={8} alignItems="center">
           <Header
             title="CASE STUDIES"
-            heading="See how we brought value to our partners' products"
+            heading="Shopify Brands, Entrepreneurs and influencers % experience more conversions with OVO"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
             maxWidth={640}
             mb={{ xs: 4, md: 8 }}
+            color="blue"
           />
           <Box width="100%">
             <Masonry spacing={{ xs: 6 }} columns={{ xs: 1, sm: 2 }}>

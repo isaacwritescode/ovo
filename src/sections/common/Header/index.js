@@ -1,7 +1,7 @@
-import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Chip, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Stack } from "@mui/system";
 
-export const Header = ({ mode, heading, desc, type, maxWidth, mb, cta }) => {
+export const Header = ({ mode, title, heading, desc, type, maxWidth, mb, cta, color }) => {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.up("md"));
 
@@ -42,8 +42,12 @@ export const Header = ({ mode, heading, desc, type, maxWidth, mb, cta }) => {
       mx="auto"
       mb={mb}
     >
+      {color && <Chip size="medium" label={title} sx={{ "& > span": { fontWeight: 500 }, bgcolor: theme.palette[color].main + "20", color: theme.palette[color].main, }} />}
       <Typography variant={md ? "h3" : "h4"} color={mode == "dark" ? 'white.main' : "black.main"} fontWeight={600}>
-        {heading}
+        {heading.split("%")[0]}
+        <Box display="inline" color={color + ".main"}>
+          {heading.split("%")[1]}
+        </Box>
       </Typography>
       <Typography
         variant="body1"

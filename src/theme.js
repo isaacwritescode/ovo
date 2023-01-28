@@ -47,7 +47,7 @@ const theme = createTheme({
             boxShadow: "none",
           },
         },
-        outlined:{
+        outlined: {
           borderColor: "#00000030"
         },
         disabled: {
@@ -116,6 +116,10 @@ const theme = createTheme({
     purple: {
       main: "#B15FFC",
       contrastText: "#ffffff",
+    },
+    pink: {
+      main: "#A33BFC",
+      contrastText: "#ffffff"
     },
     skyBlue: {
       main: "#35C0FC",

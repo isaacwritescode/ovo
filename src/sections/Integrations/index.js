@@ -6,7 +6,7 @@ export const Integrations = () => {
     <Box width={{ lg: "80%", sm: "75%" }} m="auto" pt={12}>
       <Grid container>
         <Grid item xs={6}>
-          <Typography variant="h3">Integrations?<br /><Box display="inline" fontWeight={600}>We've got you covered</Box> </Typography>
+          <Typography variant="h3" fontWeight={600}>Integrations?<br /><Box display="inline" color="blue.main">We've got you covered</Box> </Typography>
         </Grid>
         <Grid item xs={6}>
           <Typography variant="body1" color="text.secondary">Whether you have 5,000 Shopify customers waiting for a discount or 50,000 subscribers anticipating your Black Friday promotions. BlueReceipt is the platform built for a lifetime of success</Typography>
@@ -37,6 +37,5 @@ export const Integrations = () => {
         </Stack>
       </Stack>
     </Box>
-
   </Box >;
 }

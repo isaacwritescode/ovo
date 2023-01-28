@@ -18,6 +18,7 @@ export default function Home() {
       <Work />
       <Integrations />
       <FAQ />
+      <Testimonials />
     </>
   );
 }
