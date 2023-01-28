@@ -9,10 +9,10 @@ export const Hero = () => {
       position="relative"
 
     >
-      <img src="/media/images/illus/avatar03.png" style={{ width: 140, position: "absolute", top: 100, left: 100 }} />
-      <img src="/media/images/illus/avatar02.png" style={{ width: 80, position: "absolute", top: 250, left: 200 }} />
-      <img src="/media/images/illus/avatar01.png" style={{ width: 150, position: "absolute", top: 60, right: 100 }} />
-      <img src="/media/images/illus/avatar04.png" style={{ width: 60, position: "absolute", top: 300, right: 350 }} />
+      <img src="/media/images/illus/avatar03.png" style={{ width: 180, position: "absolute", top: 80, left: 100 }} />
+      <img src="/media/images/illus/avatar02.png" style={{ width: 140, position: "absolute", top: 250, left: 200 }} />
+      <img src="/media/images/illus/avatar01.png" style={{ width: 200, position: "absolute", top: 60, right: 100 }} />
+      <img src="/media/images/illus/avatar04.png" style={{ width: 180, position: "absolute", top: 300, right: 350 }} />
       <Box
         py={{
           xs: 8, lg: 6
