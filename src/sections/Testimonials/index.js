@@ -22,7 +22,7 @@ export const Testimonials = () => {
           <Grid item xs={5}>
             <Stack spacing={1} p={3} bgcolor="#F7F9FC" borderRadius={4}>
               {TESTIMONIALS.slice(0, 4).map(({ image, name, occupation }, idx) => <Stack key={idx} direction="row" spacing={2} >
-                <Stack direction="row" spacing={2} p={3} borderRadius={3} width="100%" alignItems="center" bgcolor={currTestimonialIdx === idx ? "white.main" : ""} sx={{ boxShadow: idx == currTestimonialIdx ? "0px 40px 160px rgba(30, 46, 61, 0.18)" : "" }} >
+                <Stack onClick={() => setCurrTestimonialIdx(idx)} direction="row" spacing={2} p={3} borderRadius={3} width="100%" alignItems="center" bgcolor={currTestimonialIdx === idx ? "white.main" : ""} sx={{ cursor: "pointer", transition: "all ease 0.5s", boxShadow: idx == currTestimonialIdx ? "0px 40px 160px rgba(30, 46, 61, 0.18)" : "" }} >
                   <img src={image} height={64} width={64} alt={`${name}-pfp`} />
 
                   <Stack
@@ -40,7 +40,7 @@ export const Testimonials = () => {
           <Grid item xs={1}></Grid>
           <Grid item xs={6}>
             <Stack spacing={1}>
-              <Typography variant="h5" textTransform="capitalize" fontWeight={600}>It was a great experience!</Typography>
+              <Typography variant="h5" fontWeight={600}>{TESTIMONIALS[currTestimonialIdx].title}</Typography>
               <Rating value={5} />
               <Typography variant="h6" color="text.secondary">{TESTIMONIALS[currTestimonialIdx].review}</Typography>
             </Stack>
