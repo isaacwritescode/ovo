@@ -18,7 +18,7 @@ export const CaseStudies = () => {
             maxWidth={1400}
             m="auto"
             py={16}
-            width={{ xs: "90%", md: "75%" }}
+            width={{ xs: "90%", md: "80%" }}
           >
             <Stack spacing={2}>
               <Box data-sal="fade-up">
@@ -57,7 +57,7 @@ export const CaseStudies = () => {
             </Stack>
           </Box>
         </Box>
-        <Box maxWidth={1400} m="auto" py={12} width={{ xs: "90%", md: "75%" }}>
+        <Box maxWidth={1400} m="auto" py={12} width={{ xs: "90%", md: "80%" }}>
           <Stack spacing={8}>
             <Box>
               <Masonry spacing={{ xs: 4, md: 8 }} columns={{ xs: 1, sm: 2 }}>

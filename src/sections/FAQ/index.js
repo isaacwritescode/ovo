@@ -11,39 +11,40 @@ export const FAQ = () => {
   };
 
   return (
-    <Box width={{ xs: "90%", lg: "75%" }} py={16} maxWidth={1400} m="auto">
-      <Grid
-        container
-        spacing={8}
-        direction={{ xs: "column", lg: "row" }}
-        alignItems={{ xs: "start", lg: "center" }}
-        columns={{ xs: 6, lg: 12 }}
-      >
-        <Grid item xs={6}>
-          <Header
-            title="FAQ"
-            heading="Frequently Asked Questions"
-            desc="Haven’t found what you’re looking for?"
-            type="page"
-            maxWidth={480}
-            cta={
-              <Link
-                path="/contact-us"
-                component={
-                  <Button size="medium" variant="outlined">
-                    Contact us
-                  </Button>
-                }
-              />
-            }
-          />
+    <Box bgcolor="white.main">
+      <Box width={{ xs: "90%", lg: "80%" }} py={16} maxWidth={1400} m="auto" >
+        <Grid
+          container
+          spacing={8}
+          direction={{ xs: "column", lg: "row" }}
+          alignItems={{ xs: "start", lg: "center" }}
+          columns={{ xs: 6, lg: 12 }}
+        >
+          <Grid item xs={6}>
+            <Header
+              heading="Frequently Asked Questions"
+              desc="Haven’t found what you’re looking for?"
+              type="page"
+              maxWidth={480}
+              cta={
+                <Link
+                  path="/contact-us"
+                  component={
+                    <Button size="medium" variant="outlined">
+                      Contact us
+                    </Button>
+                  }
+                />
+              }
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <Box data-sal="fade-up" delay={200}>
+              <AccordionGroup expanded={expanded} handleChange={handleChange} />
+            </Box>
+          </Grid>
         </Grid>
-        <Grid item xs={6}>
-          <Box data-sal="fade-up" delay={200}>
-            <AccordionGroup expanded={expanded} handleChange={handleChange} />
-          </Box>
-        </Grid>
-      </Grid>
+      </Box>
     </Box>
   );
 };

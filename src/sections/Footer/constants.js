@@ -1,3 +1,5 @@
+import { MessageText, Instagram, Dribbble, Call } from "iconsax-react"
+
 export const FOOTER_LINKS = {
   category1: [
     {
@@ -57,18 +59,18 @@ export const FOOTER_LINKS = {
 
 export const SOCIAL_LINKS = [
   {
-    platform: "instagram",
-    icon: "/media/images/socials/instagram-logo.svg",
-    url: "https://instagram.com",
-  },
-  {
-    platform: "github",
-    icon: "/media/images/socials/github-logo.svg",
+    platform: "phone",
+    icon: <Call />,
     url: "https://github.com",
   },
   {
-    platform: "discord",
-    icon: "/media/images/socials/discord-logo.svg",
-    url: "https://discord.com",
+    platform: "instagram",
+    icon: <Instagram />,
+    url: "https://instagram.com",
+  },
+  {
+    platform: "Dribbble",
+    icon: <Dribbble />,
+    url: "https://dribbble.com/",
   },
 ];

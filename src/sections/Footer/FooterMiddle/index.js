@@ -12,7 +12,7 @@ export const FooterMiddle = () => {
             <Link
               path="/"
               component={
-                <Typography variant="h6" fontFamily="Digital-Geometric-Private">
+                <Typography variant="h6" fontFamily="Digital-Geometric-Private" color="white.main">
                   OVO
                 </Typography>
               }
@@ -29,7 +29,7 @@ export const FooterMiddle = () => {
         {Object.keys(FOOTER_LINKS).map((category, idx) => (
           <Grid item xs={3} key={idx}>
             <Stack spacing={3} pb={{ xs: 8, md: 0 }}>
-              <Typography variant="h6" textTransform="capitalize">
+              <Typography variant="h6" textTransform="capitalize" color="white.main">
                 {category}
               </Typography>
               {FOOTER_LINKS[category].map(({ title, path, url }, idx) => {

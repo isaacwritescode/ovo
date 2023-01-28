@@ -5,29 +5,22 @@ export const ImageView = () => {
   const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
-    <Box position="relative" data-sal="fade-up" data-sal-delay={600}>
+    <Box position="relative">
       <img
-        src="/media/images/illus/hero.png"
-        className={imgLoaded ? "visible" : "invisible"}
+        src="/media/images/illus/video-prev-2.png"
+        // className={imgLoaded ? "visible" : "invisible"}
         onLoad={() => setImgLoaded(true)}
         alt="illustration"
-        style={{ borderRadius: "12px", maxWidth: "100%" }}
+        style={{ maxWidth: "100%", borderRadius: 12 }}
       />
-      <img
-        src="/media/images/illus/card.svg"
-        width="50%"
-        alt=""
-        style={{ position: "absolute", bottom: 24, left: 24 }}
-      />
-      <Box
+      {/* <Box
         width="100%"
         bgcolor="grey.200"
         className={imgLoaded ? "invisible" : "visible"}
         sx={{
-          aspectRatio: "700/850",
-          borderRadius: "12px",
+          aspectRatio: "660/700",
         }}
-      />
+      /> */}
     </Box>
   );
 };

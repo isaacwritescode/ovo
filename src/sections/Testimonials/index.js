@@ -11,7 +11,7 @@ export const Testimonials = () => {
   return (
     <Box width="100%" py={12} bgcolor="#f2f3f5">
       <Box
-        width={{ xs: "90%", lg: "75%" }}
+        width={{ xs: "90%", lg: "80%" }}
         m="auto"
         maxWidth={1400}
         overflow="hidden"
@@ -19,8 +19,7 @@ export const Testimonials = () => {
         <Stack spacing={4}>
           <Header
             title="Testimonials"
-            heading="Don’t just take our word for it,
-          see what clients have to say about our services"
+            heading="Here's what people have to say about our work"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
             maxWidth={640}
             mb={{ md: 8 }}

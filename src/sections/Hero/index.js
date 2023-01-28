@@ -1,29 +1,33 @@
 import { Box, Grid } from "@mui/material";
+import { Stack } from "@mui/system";
 import { Content } from "./Content";
 import { ImageView } from "./ImageView";
 
 export const Hero = () => {
   return (
-    <Box
-      py={{ xs: 8, lg: 6 }}
-      width={{ xs: "90%", lg: "75%" }}
-      m="auto"
-      maxWidth={1400}
+    <Box width="100%"
+      position="relative"
+
     >
-      <Grid
-        container
-        spacing={8}
-        alignItems="center"
-        justifyContent="space-between"
-        columns={{ xs: 6, md: 12 }}
+      <img src="/media/images/illus/avatar03.png" style={{ width: 140, position: "absolute", top: 100, left: 100 }} />
+      <img src="/media/images/illus/avatar02.png" style={{ width: 80, position: "absolute", top: 250, left: 200 }} />
+      <img src="/media/images/illus/avatar01.png" style={{ width: 150, position: "absolute", top: 60, right: 100 }} />
+      <img src="/media/images/illus/avatar04.png" style={{ width: 60, position: "absolute", top: 300, right: 350 }} />
+      <Box
+        py={{
+          xs: 8, lg: 6
+
+        }}
+        width={{ xs: "90%", lg: "80%" }}
+        m="auto"
+        maxWidth={1400}
       >
-        <Grid item xs={6}>
+        <Stack spacing={8} justifyContent="center" alignItems="center">
           <Content />
-        </Grid>
-        <Grid item xs={6}>
           <ImageView />
-        </Grid>
-      </Grid>
+        </Stack>
+
+      </Box>
     </Box>
   );
 };

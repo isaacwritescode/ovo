@@ -151,7 +151,7 @@ export const PROJECTS = {
     desc: "Local Transport Network",
     longDesc: "A transport network startup aiming to provide easy & efficient flow of transit of passengers travelling via local transport",
   },
-  dupside: {
+  demin: {
     available: false,
     desc: "Personalised trendy wear",
     longDesc:

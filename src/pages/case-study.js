@@ -58,7 +58,7 @@ export const CaseStudy = () => {
           <Box>
             <Box maxWidth={1400} m="auto">
               <Box>
-                <Box mx="auto" width={{ xs: "75%" }}>
+                <Box mx="auto" width={{ xs: "80%" }}>
                   <Grid
                     container
                     spacing={{ md: 12 }}
@@ -148,7 +148,7 @@ export const CaseStudy = () => {
                 </Box>
               </Box>
               <Box>
-                <Box mx="auto" width={{ xs: "90%", md: "75%" }}>
+                <Box mx="auto" width={{ xs: "90%", md: "80%" }}>
                   <Stack spacing={{ xs: 4, md: 8 }}>
                     {body.map(({ type, layout, src, src2, title, desc }, idx) =>
                       type === "img" ? (

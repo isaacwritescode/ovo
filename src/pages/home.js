@@ -13,7 +13,6 @@ export default function Home() {
         <title>OVO | Web Design & Development Agency</title>
       </Helmet>
       <Hero />
-      <StatBlock />
       <Services />
       <Work />
       <FAQ />

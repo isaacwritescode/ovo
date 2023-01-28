@@ -33,100 +33,57 @@ export const Navbar = ({
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  return pathname === "/case-studies" && navTheme === "dark" ? (
+  return <Stack
+    m="auto"
+    sx={{
+      position: "sticky",
+      top: 0,
+      zIndex: 99,
+      backgroundColor: "transparent",
+      boxShadow: userHasScrolled && "0 0 50px rgb(0, 0, 0, 0.2)",
+      "@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))":
+      {
+        backgroundColor: userHasScrolled && "rgba(41, 45, 50, .8)",
+        backdropFilter: userHasScrolled && "blur(2em)",
+      },
+      transition: "all ease 0.3s",
+    }}
+  >
     <Stack
-      width="100%"
+      direction="row"
+      justifyContent="space-between"
+      alignItems="center"
+      width="80%"
+      height="72px"
       m="auto"
-      bgcolor="black.main"
-      sx={{
-        position: "sticky",
-        top: 0,
-        zIndex: 99,
-        boxShadow: userHasScrolled && "0 0 50px rgb(23 92 255 / 10%)",
-        transition: "all ease 0.3s",
-      }}
+      maxWidth={1400}
     >
-      <Stack
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-        width="90%"
-        height="60px"
-        m="auto"
-        maxWidth={1400}
-      >
-        <Link
-          path="/"
-          component={
-            <Typography
-              variant="h6"
-              fontFamily="Digital-Geometric-Private"
-              color="white.main"
-            >
-              OVO
-            </Typography>
-          }
-        />
-        {md && <NavLinkGroup links={NAVBAR_LINKS} dark />}
-        <Stack direction="row" spacing={2}>
-          {sm && (
-            <Button variant="contained" color="white">
-              Get in touch
-            </Button>
-          )}
-          {md || (
-            <IconButton onClick={() => setIsMenuVisible(!isMenuVisible)}>
-              {isMenuVisible ? <CloseOutlined /> : <Menu />}
-            </IconButton>
-          )}
-        </Stack>
+      <Link
+        path="/"
+        component={
+          <Typography
+            variant="h6"
+            fontFamily="Digital-Geometric-Private"
+            color="white.main"
+          >
+            OVO
+          </Typography>
+        }
+      />
+      {md && <NavLinkGroup links={NAVBAR_LINKS} dark />}
+      <Stack direction="row" spacing={2}>
+        {sm && (
+          <Button variant="contained" color="white" sx={{ borderColor: "#ffffff40" }}>
+            Get in touch
+          </Button>
+        )}
+        {md || (
+          <IconButton onClick={() => setIsMenuVisible(!isMenuVisible)}>
+            {isMenuVisible ? <CloseOutlined /> : <Menu />}
+          </IconButton>
+        )}
       </Stack>
     </Stack>
-  ) : (
-    <Stack
-      width="100%"
-      m="auto"
-      bgcolor="white.main"
-      sx={{
-        position: "sticky",
-        top: 0,
-        zIndex: 99,
-        boxShadow: userHasScrolled && "0 0 50px rgb(23 92 255 / 10%)",
-        transition: "all ease 0.3s",
-        "@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))":
-        {
-          backgroundColor: "rgba(255, 255, 255, .8)",
-          backdropFilter: "blur(2em)",
-        },
-      }}
-    >
-      <Stack
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-        width="90%"
-        height="60px"
-        m="auto"
-        maxWidth={1400}
-      >
-        <Link
-          path="/"
-          component={
-            <Typography variant="h6" fontFamily="Digital-Geometric-Private">
-              OVO
-            </Typography>
-          }
-        />
-        {md && <NavLinkGroup links={NAVBAR_LINKS} />}
-        <Stack direction="row" spacing={2}>
-          {sm && <Button variant="outlined">Get in touch</Button>}
-          {md || (
-            <IconButton onClick={() => setIsMenuVisible(!isMenuVisible)}>
-              {isMenuVisible ? <CloseOutlined /> : <Menu />}
-            </IconButton>
-          )}
-        </Stack>
-      </Stack>
-    </Stack>
-  );
+  </Stack>
+
 };

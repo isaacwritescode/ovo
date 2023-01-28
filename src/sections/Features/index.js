@@ -6,7 +6,7 @@ import { FEATURES } from "./constants";
 export const Features = () => {
   return (
     <Box width="100%" py={12} bgcolor="#f2f3f5">
-      <Box width={{ xs: "90%", lg: "75%" }} maxWidth={1400} m="auto">
+      <Box width={{ xs: "90%", lg: "80%" }} maxWidth={1400} m="auto">
         <Stack spacing={4}>
           <Header
             title="Why us"

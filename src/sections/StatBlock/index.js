@@ -23,7 +23,7 @@ export const StatBlock = () => {
         }}
         delayedCall
       >
-        <Box width={{ xs: "90%", lg: "75%" }} maxWidth={1400} m="auto">
+        <Box width={{ xs: "90%", lg: "80%" }} maxWidth={1400} m="auto">
           <Stack
             justifyContent="space-between"
             alignItems="center"

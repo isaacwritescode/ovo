@@ -47,11 +47,14 @@ const theme = createTheme({
             boxShadow: "none",
           },
         },
+        outlined:{
+          borderColor: "#00000030"
+        },
         disabled: {
           color: "#000000",
         },
         sizeLarge: {
-          padding: "14px 28px",
+          padding: "10px 28px",
         },
         sizeMedium: {
           padding: "6px 20px",
@@ -61,7 +64,8 @@ const theme = createTheme({
     MuiChip: {
       styleOverrides: {
         label: {
-          fontWeight: 500,
+          marginTop: -2,
+          fontWeight: 400,
         },
       },
     },
@@ -80,7 +84,7 @@ const theme = createTheme({
       contrastText: "#000000",
     },
     blue: {
-      main: "#0083ff",
+      main: "#2097F6",
       contrastText: "#ffffff",
     },
     turquoise: {
@@ -119,7 +123,7 @@ const theme = createTheme({
     },
     text: {
       primary: "#000000",
-      secondary: grey[500],
+      secondary: "#AAB1C1",
     },
     gradient: {
       orangePink: "linear-gradient(90deg, #C98530 3.95%, #F02864 100.2%)",

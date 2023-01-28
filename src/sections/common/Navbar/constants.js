@@ -1,7 +1,7 @@
 export const NAVBAR_LINKS = [
   {
-    title: "home",
-    path: "/",
+    title: "work",
+    path: "/work",
   },
   {
     title: "about",
@@ -13,10 +13,11 @@ export const NAVBAR_LINKS = [
   },
   {
     title: "case studies",
+    label: "new",
     path: "/case-studies",
   },
   {
-    title: "join us",
+    title: "team",
     path: "/careers",
   },
 ];

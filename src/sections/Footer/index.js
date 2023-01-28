@@ -1,30 +1,37 @@
-import { Divider, Stack, Typography } from "@mui/material";
+import { Divider, List, ListItem, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { FooterMiddle } from "./FooterMiddle";
 import { Button, Box } from "@mui/material";
 
 export const Footer = () => {
+  const theme = useTheme();
+  const sm = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <Box
-      width={{ xs: "90%", lg: "75%" }}
+      width={{ xs: "90%", lg: "80%" }}
       maxWidth={1400}
-      bgcolor="white.main"
       m="auto"
     >
-      <Stack py={12} spacing={8}>
+      <Stack py={14} spacing={8}>
         <Stack
-          justifyContent="space-between"
-          direction={{ xs: "column", md: "row" }}
-          alignItems={{ xs: "start", md: "center" }}
-          spacing={{ xs: 4, md: 0 }}
+          spacing={6}
+          alignItems="center"
         >
-          <Typography variant="h3" fontWeight={600} maxWidth={480}>
-            Ready to improve your online presence?
+          <Typography
+            variant={sm ? "h1" : "h2"}
+            lineHeight={1}
+            fontWeight={500}
+            letterSpacing="-3px"
+            color="white.main"
+          >
+            Let's work together
           </Typography>
-          <Button size="large" variant="contained">
-            Request a Quote
+          <Button size="large" variant="contained" color="white">
+            Get in touch
           </Button>
         </Stack>
-        <Divider />
+        <List>
+          <Divider sx={{ bgcolor: "#ffffff40" }} />
+        </List>
         <FooterMiddle />
       </Stack>
     </Box>

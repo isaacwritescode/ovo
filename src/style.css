@@ -54,6 +54,7 @@ html,
 body {
   max-width: 2560px;
   margin: 0 auto;
+  background: #292D32;
 }
 
 /* Scrollbar */
