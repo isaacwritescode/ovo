@@ -43,7 +43,11 @@ const AccordionSummary = styled(({ expanded, ...props }) => (
   },
   "& .MuiAccordionSummary-content": {
     marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(2),
   },
+  "& .MuiAccordionSummary-content > *": {
+    fontWeight: 500
+  }
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
