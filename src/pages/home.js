@@ -6,6 +6,7 @@ import { StatBlock } from "../sections/StatBlock";
 import { Work } from "../sections/Work";
 import { Testimonials } from "../sections/Testimonials";
 import { Integrations } from "../sections/Integrations";
+import { Mission } from "../sections/Mission";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Work />
       <Integrations />
       <FAQ />
+      <Mission />
       <Testimonials />
     </>
   );

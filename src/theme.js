@@ -114,7 +114,7 @@ const theme = createTheme({
       contrastText: "#ffffff",
     },
     purple: {
-      main: "#6746F8",
+      main: "#7358E7",
       contrastText: "#ffffff",
     },
     pink: {
