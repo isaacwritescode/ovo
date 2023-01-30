@@ -18,11 +18,12 @@ export const Content = () => {
       <Box data-sal="fade-up" width="90%"
         py={6}>
         <Stack
-          alignItems="center"
+          alignItems={{ md: "center" }}
           justifyContent="center"
           spacing={4}
-          textAlign="center"
+          textAlign={{ md: "center" }}
           maxWidth={1000}
+          width={{ xs: "90%", md: "auto" }}
         >
           <Typography
             variant={sm ? "h1" : "h2"}
@@ -36,6 +37,7 @@ export const Content = () => {
           <Typography variant="body1" color="text.secondary" fontWeight={400} width={{ sm: "60%" }}>
             OVO is a design and development agency specialized in creating simple and performant UX's for startups
           </Typography>
+          <Button size="large" variant="contained" color="white" sx={{ width: "fit-content" }}>Request a Quote</Button>
         </Stack>
       </Box >
     </Stack >
