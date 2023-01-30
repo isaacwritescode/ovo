@@ -18,7 +18,7 @@ export const Header = ({ mode, title, heading, desc, type, maxWidth, mb, cta, co
         mb={mb}
       >
         {color && <Chip size="medium" label={title} sx={{ "& > span": { fontWeight: 500 }, bgcolor: theme.palette[color].main + "20", color: theme.palette[color].main, }} />}
-        <Typography variant={md ? "h3" : "h4"} color={mode == "dark" ? 'white.main' : "black.main"} fontWeight={600}>
+        <Typography variant={md ? "h3" : "h4"} color={mode === "dark" ? 'white.main' : "black.main"} fontWeight={600}>
           {heading.split("%")[0]}
           <Box display="inline" color={color + ".main"}>
             {heading.split("%")[1]}
@@ -26,7 +26,7 @@ export const Header = ({ mode, title, heading, desc, type, maxWidth, mb, cta, co
         </Typography>
         <Typography
           variant="body1"
-          color={mode == "dark" ? "#ffffff80" : "text.secondary"}
+          color={mode === "dark" ? "#ffffff80" : "text.secondary"}
           width="80%"
         >
           {desc}
@@ -47,7 +47,7 @@ export const Header = ({ mode, title, heading, desc, type, maxWidth, mb, cta, co
       mb={mb}
     >
       {color && <Chip size="medium" label={title} sx={{ "& > span": { fontWeight: 500 }, bgcolor: theme.palette[color].main + "20", color: theme.palette[color].main, }} />}
-      <Typography variant={md ? "h3" : "h4"} color={mode == "dark" ? 'white.main' : "black.main"} fontWeight={600}>
+      <Typography variant={md ? "h3" : "h4"} color={mode === "dark" ? 'white.main' : "black.main"} fontWeight={600}>
         {heading.split("%")[0]}
         <Box display="inline" color={color + ".main"}>
           {heading.split("%")[1]}
@@ -55,7 +55,7 @@ export const Header = ({ mode, title, heading, desc, type, maxWidth, mb, cta, co
       </Typography>
       <Typography
         variant="body1"
-        color={mode == "dark" ? "#ffffff80" : "text.secondary"}
+        color={mode === "dark" ? "#ffffff80" : "text.secondary"}
         width="80%"
       >
         {desc}

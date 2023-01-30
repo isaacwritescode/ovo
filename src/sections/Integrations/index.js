@@ -1,17 +1,15 @@
 import { Stack, Typography, Box, Grid, useTheme, useMediaQuery } from "@mui/material";
 import { useRef } from "react";
 import { useEffect } from "react";
-import { useState } from "react";
 import { INTEGRATIONS } from "./constants";
 import { useInView } from "react-intersection-observer"
 
 export const Integrations = () => {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.up("sm"));
-  const [scrollTop, setScrollTop] = useState(window.scrollY);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
   });
   useEffect(() => {

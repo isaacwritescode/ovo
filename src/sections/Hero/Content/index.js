@@ -6,7 +6,6 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import { Link } from "../../common/Link";
 
 export const Content = () => {
   const theme = useTheme();

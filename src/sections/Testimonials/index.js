@@ -1,4 +1,4 @@
-import { Stack, Box, Grid, Typography, Chip, Rating, useTheme } from "@mui/material";
+import { Stack, Box, Grid, Typography, Chip, Rating } from "@mui/material";
 import { useState } from "react";
 import { Header } from "../common/Header";
 import { TESTIMONIALS } from "./constants";
@@ -6,9 +6,6 @@ import ProgressBar from "react-customizable-progressbar"
 import { useEffect } from "react";
 
 export const Testimonials = () => {
-  const theme = useTheme();
-
-  // const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const [currTestimonialIdx, setCurrTestimonialIdx] = useState(0);
 
   const [value, setValue] = useState(0);

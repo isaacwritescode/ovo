@@ -28,7 +28,7 @@ function App() {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [isMenuVisible]);
 
   useEffect(() => {
     sal({ threshold: 0.3 });

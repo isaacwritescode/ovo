@@ -1,4 +1,4 @@
-import { Divider, List, ListItem, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Divider, List, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { FooterMiddle } from "./FooterMiddle";
 import { Button, Box } from "@mui/material";
 
