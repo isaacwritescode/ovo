@@ -16,15 +16,15 @@ export const Work = () => {
             heading="Shopify Brands, Entrepreneurs and influencers % experience more conversions with OVO"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
             maxWidth={640}
-            mb={{ xs: 4, md: 8 }}
+            mb={{ md: 8 }}
             color="blue"
           />
           <Box width="100%">
-            <Masonry spacing={{ xs: 6 }} columns={{ xs: 1, sm: 2 }}>
+            <Masonry spacing={{ xs: 0, sm: 6 }} columns={{ xs: 1, sm: 2 }}>
               {Object.entries(PROJECTS).map(
                 ([title, { longDesc, available }], idx) => {
                   return (
-                    <Box key={idx}>
+                    <Box key={idx} pb={{ xs: 6, sm: 0 }}>
                       <Box data-sal="fade-up">
                         <Stack spacing={3}>
                           <Link
@@ -45,7 +45,7 @@ export const Work = () => {
                                 <img
                                   src={`/media/images/projects/${title}/case-study/cover.png`}
                                   width="100%"
-                                  style={{borderRadius: "12px"}}
+                                  style={{ borderRadius: "12px" }}
                                   alt={`${title}-cover`}
                                 />
                               </Box>
