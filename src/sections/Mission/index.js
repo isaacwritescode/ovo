@@ -12,10 +12,10 @@ export const Mission = () => {
   // const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const [viewPortEntered, setViewPortEntered] = useState(false);
   const [onCountUpEnd, setOnCountUpEnd] = useState(false);
-  return <Box width="100%" position="relative" bgcolor="#292D32" py={12} sx={{ background: "url(/media/images/illus/components.svg) bottom no-repeat, url(/media/images/illus/noise-bg.png) center no-repeat", backgroundSize: "contain cover", backgroundAttachment: "inherit, fixed " }}>
-    <Box width={{ sm: "90%", lg: "80%" }} m="auto" >
-      <Header title="OUR MISSION" heading="We’ve successfully delivered hundreds of %niche-targeted custom solutions" desc="Social marketing platform that allows music makers and content creators to create campaigns that can effectively reach their fanbaseSocial marketing platform that allows music makers" color="purple" maxWidth={600} mode="dark" mb={12} />
-      <Box mx="auto" width="fit-content" mb={88}>
+  return <Box width="100%" position="relative" bgcolor="#292D32" py={12} sx={{ background: "url(/media/images/illus/components.svg) bottom no-repeat, url(/media/images/illus/noise-bg.png) center", backgroundSize: "contain, cover", backgroundAttachment: "inherit, fixed", backgroundRepeat: "no-repear, repeat" }}>
+    <Box width={{ xs: "90%", lg: "80%" }} m="auto">
+      <Header title="OUR MISSION" heading="We’ve successfully delivered hundreds of %niche-targeted custom solutions" desc="Social marketing platform that allows music makers and content creators to create campaigns that can effectively reach their fanbaseSocial marketing platform that allows music makers" color="purple" maxWidth={600} mode="dark" mb={{ xs: 2, md: 12 }} />
+      <Box mx={{ md: "auto" }} width={{ xs: "100%", sm: "fit-content" }} mb={{ xs: 22, sm: 44, md: 80 }}>
         <VisibilitySensor
           active={!viewPortEntered}
           onChange={(isVisible) => {
@@ -26,10 +26,10 @@ export const Mission = () => {
           delayedCall
         >
           <Stack
-            spacing={4}
+            spacing={{ xs: 2, md: 4 }}
             alignItems="center"
             direction={{ sm: "row", xs: "column" }}
-            sx={{ bgcolor: "#ffffff10", borderRadius: 4, p: 3, backdropFilter: "blur(2em)" }}
+            sx={{ bgcolor: "#ffffff10", borderRadius: 4, p: 3, backdropFilter: "blur(2em)", }}
           >
             {Object.entries(PROJECT_STATS).map(
               ([key, { value, suffix, decimal }], idx) => (
@@ -37,8 +37,10 @@ export const Mission = () => {
                   <Stack
                     spacing={1}
                     direction="column"
-                    sx={{ bgcolor: "#ffffff10", borderRadius: 4, p: 3, pr: 6 }}
                     alignItems="start"
+                    pr={{ md: 6 }}
+                    width={{ xs: "100%", sm: "fit-content" }}
+                    sx={{ bgcolor: "#ffffff10", borderRadius: 4, p: 3, boxSizing: "border-box" }}
                   >
                     <Typography
                       variant="body2"
@@ -62,7 +64,7 @@ export const Mission = () => {
                           <>
                             <Typography
                               ref={countUpRef}
-                              variant="h2"
+                              variant="h3"
                               fontWeight={500}
                               color="white.main"
                               textTransform="capitalize"

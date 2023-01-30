@@ -13,13 +13,13 @@ export default function Home({ scrollAmt }) {
       <Helmet>
         <title>OVO | Web Design & Development Agency</title>
       </Helmet>
-      <Hero />
+      {/* <Hero />
       <Services />
       <Work />
       <Integrations scrollAmt={scrollAmt} />
-      <FAQ />
+      <FAQ /> */}
       <Mission />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </>
   );
 }

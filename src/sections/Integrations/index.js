@@ -37,7 +37,7 @@ export const Integrations = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box width="calc(100vw)">
+      {md || <Box width="calc(100vw)">
         <Stack direction="row" spacing={3} sx={{ overflowX: "scroll", "::-webkit-scrollbar": { display: "none" } }}>
           {INTEGRATIONS.map((({ title, desc }, idx) =>
             <Box sx={{ mr: idx === Object.keys(INTEGRATIONS).length - 1 ? "5vw !important" : "0", ml: idx === 0 ? "5vw !important" : "" }}>
@@ -51,7 +51,7 @@ export const Integrations = () => {
             </Box>
           ))}
         </Stack>
-      </Box>
+      </Box>}
     </Stack>
     {md && <Box sx={{ overflowX: "hidden" }} py={12}>
       <Stack spacing={3} ref={ref}>
