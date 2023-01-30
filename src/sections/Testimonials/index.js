@@ -32,11 +32,11 @@ export const Testimonials = () => {
         maxWidth={1400}
         overflow="hidden"
       >
-        <Header title="WHAT CLIENTS SAY" heading="Don’t just take our work for it, see what % people say about our services & expertise" desc="Social marketing platform that allows music makers and content creators to create campaigns that can effectively reach their fanbase" maxWidth={600} mb={8} color="pink" />
+        <Header title="WHAT CLIENTS SAY" heading="Don’t just take our work for it, see what % people say about our services & expertise" desc="Social marketing platform that allows music makers and content creators to create campaigns that can effectively reach their fanbase" maxWidth={600} mb={{ xs: 2, md: 8 }} color="pink" />
 
         <Grid container>
-          <Grid item xs={5}>
-            <Stack spacing={1} p={3} bgcolor="#F7F9FC" borderRadius={4}>
+          <Grid item md={5}>
+            <Stack display={{ xs: "none", md: "flex" }} spacing={1} p={3} bgcolor="#F7F9FC" borderRadius={4}>
               {TESTIMONIALS.slice(0, 4).map(({ image, name, occupation }, idx) => <Stack key={idx} direction="row" spacing={2} >
                 <Stack onClick={() => setCurrTestimonialIdx(idx)} direction="row" spacing={2} p={3} borderRadius={3} width="100%" alignItems="center" bgcolor={currTestimonialIdx === idx ? "white.main" : ""} sx={{ cursor: "pointer", transition: "all ease 0.5s", boxShadow: idx === currTestimonialIdx ? "0px 40px 160px rgba(30, 46, 61, 0.18)" : "" }} >
                   <img src={image} height={64} width={64} alt={`${name}-pfp`} />
@@ -53,8 +53,8 @@ export const Testimonials = () => {
               </Stack>)}
             </Stack>
           </Grid>
-          <Grid item xs={1}></Grid>
-          <Grid item xs={6}>
+          <Grid item md={1}></Grid>
+          <Grid item md={6}>
             <Stack height={"100%"} pt={2}>
               <Stack spacing={1} flex={1}>
                 <Typography variant="h5" fontWeight={600}>{TESTIMONIALS[currTestimonialIdx].title}</Typography>

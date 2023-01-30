@@ -8,7 +8,7 @@ export const INTEGRATIONS = [
     desc: "Get your website built with framer for easy editing"
   },
   {
-    title: "google analytics",
+    title: "analytics",
     desc: "See how users interact with your website"
   },
   {
@@ -25,7 +25,7 @@ export const INTEGRATIONS = [
   },
   {
     title: "lottieFiles",
-    desc: "Add cool animations to your site"
+    desc: "Add cool animations to your site with fast renders"
   },
   {
     title: "cloudflare",

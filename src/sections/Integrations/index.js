@@ -37,7 +37,7 @@ export const Integrations = () => {
           </Grid>
         </Grid>
       </Box>
-      {md || <Box width="calc(100vw)">
+      {md || <Box width="100%">
         <Stack direction="row" spacing={3} sx={{ overflowX: "scroll", "::-webkit-scrollbar": { display: "none" } }}>
           {INTEGRATIONS.map((({ title, desc }, idx) =>
             <Box sx={{ mr: idx === Object.keys(INTEGRATIONS).length - 1 ? "5vw !important" : "0", ml: idx === 0 ? "5vw !important" : "" }}>
