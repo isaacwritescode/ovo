@@ -8,7 +8,7 @@ export const ImageView = () => {
       <img
         src="/media/images/illus/video-prev-2.png"
         // className={imgLoaded ? "visible" : "invisible"}
-        onLoad={() => setImgLoaded(true)}
+        // onLoad={() => setImgLoaded(true)}
         alt="illustration"
         style={{ maxWidth: "100%", borderRadius: 12 }}
       />
