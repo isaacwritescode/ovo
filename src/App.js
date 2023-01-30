@@ -15,18 +15,20 @@ function App() {
   const { pathname } = useLocation();
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [userHasScrolled, setUserHasScrolled] = useState(false);
+
   useEffect(() => {
     const onScroll = () => {
       window.scrollY === 0
         ? setUserHasScrolled(false)
         : setUserHasScrolled(true);
+
     };
     if (isMenuVisible) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  });
+  }, []);
 
   useEffect(() => {
     sal({ threshold: 0.3 });
@@ -46,7 +48,7 @@ function App() {
               />
             }
           >
-            <Route index element={<Home />} />
+            <Route index element={<Home scrollAmt={0} />} />
             <Route path="/case-studies" exact element={<CaseStudies />} />
             <Route path="/case-studies/:slug" element={<CaseStudy />} />
           </Route>

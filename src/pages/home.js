@@ -7,7 +7,7 @@ import { Testimonials } from "../sections/Testimonials";
 import { Integrations } from "../sections/Integrations";
 import { Mission } from "../sections/Mission";
 
-export default function Home() {
+export default function Home({ scrollAmt }) {
   return (
     <>
       <Helmet>
@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Work />
-      <Integrations />
+      <Integrations scrollAmt={scrollAmt} />
       <FAQ />
       <Mission />
       <Testimonials />

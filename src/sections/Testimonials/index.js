@@ -15,7 +15,6 @@ export const Testimonials = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log(value);
       if (value === 100) {
         setValue(0);
         if (currTestimonialIdx === Object.keys(TESTIMONIALS).slice(0, 4).length - 1) setCurrTestimonialIdx(0);
