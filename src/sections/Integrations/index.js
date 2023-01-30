@@ -1,4 +1,4 @@
-import { Stack, Typography, Box, Grid } from "@mui/material";
+import { Stack, Typography, Box, Grid, useTheme, useMediaQuery } from "@mui/material";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -6,6 +6,8 @@ import { INTEGRATIONS } from "./constants";
 import { useInView } from "react-intersection-observer"
 
 export const Integrations = () => {
+  const theme = useTheme();
+  const md = useMediaQuery(theme.breakpoints.up("sm"));
   const [scrollTop, setScrollTop] = useState(window.scrollY);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -24,17 +26,34 @@ export const Integrations = () => {
   }, [inView]);
 
   return <Box width="100%" bgcolor="#f2f3f5" position="relative">
-    <Box width={{ lg: "80%", sm: "75%" }} m="auto" pt={12}>
-      <Grid container>
-        <Grid item xs={6}>
-          <Typography variant="h3" fontWeight={600}>Integrations?<br /><Box display="inline" color="blue.main">We've got you covered</Box> </Typography>
+    <Stack spacing={4} py={12}>
+      <Box width={{ lg: "80%", xs: "90%" }} m="auto" >
+        <Grid container spacing={{ xs: 2, sm: 0 }}>
+          <Grid item md={6}>
+            <Typography variant="h3" fontWeight={600}>Integrations?<br /><Box display="inline" color="blue.main">We've got you covered</Box> </Typography>
+          </Grid>
+          <Grid item md={6}>
+            <Typography variant="body1" color="text.secondary">Whether you have 5,000 Shopify customers waiting for a discount or 50,000 subscribers anticipating your Black Friday promotions. BlueReceipt is the platform built for a lifetime of success</Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={6}>
-          <Typography variant="body1" color="text.secondary">Whether you have 5,000 Shopify customers waiting for a discount or 50,000 subscribers anticipating your Black Friday promotions. BlueReceipt is the platform built for a lifetime of success</Typography>
-        </Grid>
-      </Grid>
-    </Box>
-    <Box sx={{ overflowX: "hidden" }} py={12}>
+      </Box>
+      <Box width="calc(100vw)">
+        <Stack direction="row" spacing={3} sx={{ overflowX: "scroll", "::-webkit-scrollbar": { display: "none" } }}>
+          {INTEGRATIONS.map((({ title, desc }, idx) =>
+            <Box sx={{ mr: idx === Object.keys(INTEGRATIONS).length - 1 ? "5vw !important" : "0", ml: idx === 0 ? "5vw !important" : "" }}>
+              <Stack key={idx} p={4} justifyContent="center" alignItems="center" spacing={4} sx={{ border: "1px solid #ddd", borderRadius: 4, }}>
+                <img src={`/media/images/icons/${title.replaceAll(" ", "-")}.svg`} width={56} height={56} alt={`${title}-icon`} />
+                <Stack textAlign="center" width="140px" spacing={1}>
+                  <Typography variant="h6" textTransform="capitalize" fontWeight={600}>{title}</Typography>
+                  <Typography variant="body2" color="text.secondary">{desc}</Typography>
+                </Stack>
+              </Stack>
+            </Box>
+          ))}
+        </Stack>
+      </Box>
+    </Stack>
+    {md && <Box sx={{ overflowX: "hidden" }} py={12}>
       <Stack spacing={3} ref={ref}>
         <Stack ref={ref1} direction="row" spacing={3} sx={{ width: 2400, transition: "transform linear 0.1s", willChange: "transform" }}>
           {INTEGRATIONS.slice(0, 4).map((({ title, desc }, idx) =>
@@ -57,6 +76,6 @@ export const Integrations = () => {
             </Stack>))}
         </Stack>
       </Stack>
-    </Box>
+    </Box>}
   </Box >;
 }
