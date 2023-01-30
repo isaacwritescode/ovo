@@ -28,7 +28,7 @@ export const NavLinkGroup = ({ links, dark }) => {
                     bottom: "-4px",
                     content: "''",
                     display: "block",
-                    height: "1px",
+                    height: "2px",
                     left: 0,
                     transition: "width 0.3s ease 0s, opacity 0.3s ease 0s",
                     width:

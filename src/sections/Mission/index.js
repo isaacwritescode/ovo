@@ -4,13 +4,12 @@ import { camelCaseToSentance } from "../../utils/camelCaseToSentance";
 import { PROJECT_STATS } from "./constants";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-import { Divider, List, Stack, Typography, useMediaQuery } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Fragment, useState } from "react";
-import { useTheme } from "@emotion/react";
 
 export const Mission = () => {
-  const theme = useTheme();
-  const sm = useMediaQuery(theme.breakpoints.up("sm"));
+  // const theme = useTheme();
+  // const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const [viewPortEntered, setViewPortEntered] = useState(false);
   const [onCountUpEnd, setOnCountUpEnd] = useState(false);
   return <Box width="100%" position="relative" bgcolor="#292D32" py={12} sx={{ background: "url(/media/images/illus/components.svg) bottom no-repeat, url(/media/images/illus/noise-bg.png) center no-repeat", backgroundSize: "contain cover" }}>

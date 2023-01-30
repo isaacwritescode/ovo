@@ -27,7 +27,6 @@ export const Navbar = ({
   useEffect(() => {
     const onScroll = () => {
       window.scrollY >= 568 ? setNavTheme("light") : setNavTheme("dark");
-      console.log(window.scrollY);
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
