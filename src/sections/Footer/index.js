@@ -6,7 +6,7 @@ export const Footer = () => {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <Box sx={{ background: "url(/media/images/illus/bg-inverted.png) bottom left no-repeat", backgroundSize: "cover" }}
+    <Box sx={{ background: "url(/media/images/illus/bg-inverted.png) bottom left no-repeat", backgroundSize: "cover", backgroundAttachment: "fixed" }}
       width="100%"    >
       <Box
         width={{ xs: "90%", lg: "80%" }}

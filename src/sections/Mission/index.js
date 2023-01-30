@@ -12,7 +12,7 @@ export const Mission = () => {
   // const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const [viewPortEntered, setViewPortEntered] = useState(false);
   const [onCountUpEnd, setOnCountUpEnd] = useState(false);
-  return <Box width="100%" position="relative" bgcolor="#292D32" py={12} sx={{ background: "url(/media/images/illus/components.svg) bottom no-repeat, url(/media/images/illus/noise-bg.png) center no-repeat", backgroundSize: "contain cover" }}>
+  return <Box width="100%" position="relative" bgcolor="#292D32" py={12} sx={{ background: "url(/media/images/illus/components.svg) bottom no-repeat, url(/media/images/illus/noise-bg.png) center no-repeat", backgroundSize: "contain cover", backgroundAttachment: "inherit, fixed " }}>
     <Box width={{ sm: "90%", lg: "80%" }} m="auto" >
       <Header title="OUR MISSION" heading="We’ve successfully delivered hundreds of %niche-targeted custom solutions" desc="Social marketing platform that allows music makers and content creators to create campaigns that can effectively reach their fanbaseSocial marketing platform that allows music makers" color="purple" maxWidth={600} mode="dark" mb={12} />
       <Box mx="auto" width="fit-content" mb={88}>
