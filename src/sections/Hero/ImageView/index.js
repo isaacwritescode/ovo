@@ -1,8 +1,7 @@
 import { Box } from "@mui/system";
-import { useState } from "react";
 
 export const ImageView = () => {
-  const [imgLoaded, setImgLoaded] = useState(false);
+  // const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
     <Box position="relative">

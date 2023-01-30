@@ -1,13 +1,8 @@
-import { BrushTwoTone } from "@mui/icons-material";
 import {
-  SearchStatus,
   Chart,
   Monitor,
-  Colorfilter,
   Brush,
-  Personalcard,
   PresentionChart,
-  Task,
 } from "iconsax-react";
 
 export const SERVICES = [

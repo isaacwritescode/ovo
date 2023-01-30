@@ -1,4 +1,4 @@
-import { MessageText, Instagram, Dribbble, Call } from "iconsax-react"
+import { Instagram, Dribbble, Call } from "iconsax-react"
 
 export const FOOTER_LINKS = {
   category1: [

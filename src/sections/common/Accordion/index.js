@@ -1,11 +1,10 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import MuiAccordion from "@mui/material/Accordion";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import { AddCircle, AddCircleOutline, RemoveCircleOutline } from "@mui/icons-material";
+import { AddCircleOutline, RemoveCircleOutline } from "@mui/icons-material";
 
 const CustomAccordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square sx={{
