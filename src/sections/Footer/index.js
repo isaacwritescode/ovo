@@ -16,7 +16,7 @@ export const Footer = () => {
         <Stack py={14} spacing={8}>
           <Stack
             spacing={6}
-            alignItems="center"
+            alignItems={{ sm: "center" }}
           >
             <Typography
               variant={sm ? "h1" : "h2"}
@@ -24,10 +24,11 @@ export const Footer = () => {
               fontWeight={500}
               letterSpacing="-3px"
               color="white.main"
+              textAlign={{ sm: "center" }}
             >
               Let's work together
             </Typography>
-            <Button size="large" variant="contained" color="white">
+            <Button size="large" variant="contained" color="white" sx={{ width: "fit-content" }} >
               Get in touch
             </Button>
           </Stack>
