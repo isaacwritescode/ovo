@@ -15,7 +15,7 @@ export const Content = () => {
   return (
     <Stack spacing={4} alignItems="center"
     >
-      <Box data-sal="fade-up" width="80%"
+      <Box data-sal="fade-up" width="90%"
         py={6}>
         <Stack
           alignItems="center"
@@ -26,7 +26,6 @@ export const Content = () => {
         >
           <Typography
             variant={sm ? "h1" : "h2"}
-            fontSize="80px"
             lineHeight={1}
             fontWeight={500}
             letterSpacing="-3px"
@@ -34,12 +33,11 @@ export const Content = () => {
           >
             We build experiences that convert
           </Typography>
-          <Typography variant="body1" color="text.secondary" fontWeight={400} width="60%">
-            OVO is a design and development agency specialized in creating simple and performant user experiences for startups
+          <Typography variant="body1" color="text.secondary" fontWeight={400} width={{ sm: "60%" }}>
+            OVO is a design and development agency specialized in creating simple and performant UX's for startups
           </Typography>
         </Stack>
-      </Box>
-
-    </Stack>
+      </Box >
+    </Stack >
   );
 };

@@ -7,7 +7,6 @@ export const Hero = () => {
   return (
     <Box width="100%"
       position="relative"
-
     >
       <img src="/media/images/illus/avatar03.png" style={{ width: 180, position: "absolute", top: 80, left: 100 }} />
       <img src="/media/images/illus/avatar02.png" style={{ width: 140, position: "absolute", top: 250, left: 200 }} />
@@ -16,7 +15,6 @@ export const Hero = () => {
       <Box
         py={{
           xs: 8, lg: 6
-
         }}
         width={{ xs: "90%", lg: "80%" }}
         m="auto"
