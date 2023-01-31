@@ -29,7 +29,7 @@ export const Testimonials = () => {
         maxWidth={1400}
         overflow="hidden"
       >
-        <Header title="WHAT CLIENTS SAY" heading="Don’t just take our work for it, see what % people say about our services & expertise" desc="Social marketing platform that allows music makers and content creators to create campaigns that can effectively reach their fanbase" maxWidth={600} mb={{ xs: 2, md: 8 }} color="pink" />
+        <Header title="WHAT CLIENTS SAY" heading="Don’t just take our work for it, see what % people say about our services & expertise" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" maxWidth={600} mb={{ xs: 2, md: 8 }} color="pink" />
 
         <Grid container>
           <Grid item md={5}>

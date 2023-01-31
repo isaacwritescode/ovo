@@ -31,7 +31,7 @@ export const Integrations = () => {
             <Typography variant="h3" fontWeight={600}>Integrations?<br /><Box display="inline" color="blue.main">We've got you covered</Box> </Typography>
           </Grid>
           <Grid item md={6}>
-            <Typography variant="body1" color="text.secondary">Whether you have 5,000 Shopify customers waiting for a discount or 50,000 subscribers anticipating your Black Friday promotions. BlueReceipt is the platform built for a lifetime of success</Typography>
+            <Typography variant="body1" color="text.secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</Typography>
           </Grid>
         </Grid>
       </Box>
