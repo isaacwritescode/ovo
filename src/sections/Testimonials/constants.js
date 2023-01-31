@@ -18,7 +18,7 @@ export const TESTIMONIALS = [
     image: "/media/images/avatars/03.png",
     name: "Eleanor Pena",
     occupation: "Nursing Assistant",
-    title: "The best in the industy",
+    title: "The best in the industry!",
     review: `Iocr lualn lqeeneplutes mnsigisdi einm sit tmea eneatvins naru uscrsu eget unnc eeueqlsircs avrvrie amursi ni amqaiul mes lalinigrf tu rbimo tntinicud geauu tmidnuer vleti emsudoi ni tluseepqnlee ssmaa tcaparel duis iritculse aulcs sed sturip dinitntcu di qetluai sruis aigtufe ni tean usemt tcidum ta erotmp ocoodmm uomlrprclae a sluac tbleivmsuu sde ucra non dioo eiusomd canliai at iqsu rssui eds vpteluuta dooi tu meni lntibad puaottlv eaasncme poavtult ltdbnia maliuqa emait aret itlve iqeleecrsus ni mitucd non ocueetrntcs a aetr nma at ltucse arnu udis svlcolain nviocllsa`,
 
   },

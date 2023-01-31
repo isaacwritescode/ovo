@@ -1,12 +1,12 @@
 export const PROJECTS = {
-  mitron: {
-    available: true,
-    banner: "/media/images/projects/mitron/case-study/banner.png",
-    bannerMob: "/media/images/projects/mitron/case-study/banner-mob.png",
-    title: "Mitron",
+  travelite: {
+    available: false,
+    banner: "/media/images/projects/travelite/case-study/banner.png",
+    bannerMob: "/media/images/projects/travelite/case-study/banner.png",
+    title: "travelite",
     desc: "Discord Music Bot",
     longDesc:
-      "Mitron is a discord music bot with a bunch of amazing features like Connect Spotify, AI song suggestions, LoFi Radio & much more",
+      "The ultimate student travel app for budget trips, exporation & epic events with best possible deals",
     website: "https://mitronbot.netlify.app",
     info: {
       headquaters: "Jharkhand, India",
