@@ -34,7 +34,7 @@ export const Content = () => {
             We build experiences that convert
           </Typography>
           <Typography variant="body1" color="text.secondary" fontWeight={400} width={{ sm: "60%" }}>
-            OVO is a design and development agency specialized in creating simple and performant UX's for startups
+            DevGeeks is a design and development agency specialized in creating simple and performant UX's for startups
           </Typography>
           {sm || <Button size="large" variant="contained" color="white" sx={{ width: "fit-content" }}>Request a Quote</Button>}
         </Stack>

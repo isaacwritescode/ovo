@@ -12,7 +12,7 @@ export const Services = () => {
         <Header
           mode="dark"
           heading="Ambition and dedication for the attention to detail"
-          desc="OVO, a full-service digital marketing agency in Goa, offers solutions across paid and owned channels"
+          desc="DevGeeks, a full-service digital marketing agency in Goa, offers solutions across paid and owned channels"
           maxWidth={640}
         />
         <Box>

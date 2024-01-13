@@ -12,8 +12,13 @@ export const FooterMiddle = () => {
             <Link
               path="/"
               component={
-                <Typography variant="h6" fontFamily="Digital-Geometric-Private" color="white.main">
-                  OVO
+                <Typography
+                  variant="h6"
+                  fontFamily="NeurialGrotesk-Private"
+                  fontWeight={500}
+                  color="white.main"
+                >
+                  DevGeeks
                 </Typography>
               }
             />
@@ -22,14 +27,18 @@ export const FooterMiddle = () => {
             </Typography>
             <SocialLinks />
             <Typography variant="body1" color="text.secondary">
-              ©2022 OVO Agency. <br /> All Rights Reserved
+              ©2022 DevGeeks Agency. <br /> All Rights Reserved
             </Typography>
           </Stack>
         </Grid>
         {Object.keys(FOOTER_LINKS).map((category, idx) => (
           <Grid item xs={3} key={idx}>
             <Stack spacing={3} pb={{ xs: 8, md: 0 }}>
-              <Typography variant="h6" textTransform="capitalize" color="white.main">
+              <Typography
+                variant="h6"
+                textTransform="capitalize"
+                color="white.main"
+              >
                 {category}
               </Typography>
               {FOOTER_LINKS[category].map(({ title, path, url }, idx) => {

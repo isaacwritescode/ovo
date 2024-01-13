@@ -59,10 +59,11 @@ export const Navbar = ({
         component={
           <Typography
             variant="h6"
-            fontFamily="Digital-Geometric-Private"
+            fontFamily="NeurialGrotesk-Private"
+            fontWeight={500}
             color="white.main"
           >
-            OVO
+            DevGeeks
           </Typography>
         }
       />

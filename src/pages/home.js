@@ -11,7 +11,7 @@ export default function Home({ scrollAmt }) {
   return (
     <>
       <Helmet>
-        <title>OVO | Web Design & Development Agency</title>
+        <title>Dev Geeks | Web Design & Development Agency</title>
       </Helmet>
       <Hero />
       <Services />
