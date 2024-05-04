@@ -1,71 +1,33 @@
-import { Grid, Stack, Typography, Box } from "@mui/material";
+import { Stack, Typography, Box } from "@mui/material";
 import { Link } from "../../common/Link";
-import { FOOTER_LINKS } from "../constants";
 import { SocialLinks } from "./SocialLinks";
 
 export const FooterMiddle = () => {
   return (
     <Box width="100%">
-      <Grid container columns={{ xs: 3, sm: 6, md: 12 }} spacing={{ md: 4 }}>
-        <Grid item xs={3}>
-          <Stack spacing={2} pb={{ xs: 6, lg: 0 }}>
-            <Link
-              path="/"
-              component={
-                <Typography
-                  variant="h6"
-                  fontFamily="NeurialGrotesk-Private"
-                  fontWeight={500}
-                  color="white.main"
-                >
-                  DevGeeks
-                </Typography>
-              }
-            />
-            <Typography variant="body1" color="textWhite.secondary">
-              Web Development Agency
-            </Typography>
-            <SocialLinks />
-            <Typography variant="body1" color="textWhite.secondary">
-              ©2022 DevGeeks Agency. <br /> All Rights Reserved
-            </Typography>
-          </Stack>
-        </Grid>
-        {Object.keys(FOOTER_LINKS).map((category, idx) => (
-          <Grid item xs={3} key={idx}>
-            <Stack spacing={3} pb={{ xs: 8, md: 0 }}>
-              <Typography
-                variant="h6"
-                textTransform="capitalize"
-                color="white.main"
-              >
-                {category}
-              </Typography>
-              {FOOTER_LINKS[category].map(({ title, path, url }, idx) => {
-                return (
-                  <Link
-                    key={idx}
-                    url={url}
-                    path={path}
-                    component={
-                      <Typography
-                        variant="body1"
-                        color="textWhite.secondary"
-                        py={0.5}
-                        sx={{
-                          "&:hover": { textDecoration: "underline" },
-                        }}
-                      >
-                        {title}
-                      </Typography>
-                    }
-                  />
-                );
-              })}
-            </Stack>
-          </Grid>
-        ))}
-      </Grid>
+      <Stack
+        spacing={2}
+        direction={{ xs: "column", md: "row" }}
+        justifyContent="space-between"
+        alignItems={{ xs: "start", md: "center" }}
+        pb={{ xs: 6, lg: 0 }}
+      >
+        <Stack>
+          <Link
+            path="/"
+            component={
+              <img src="logos/logo+wordmark.svg" height={28} alt="logo" />
+            }
+          />
+          <Typography variant="body1" color="textWhite.secondary">
+            Web Development Agency
+          </Typography>
+        </Stack>
+        <Typography variant="body1" color="textWhite.secondary">
+          ©2024 DevGeeks Agency. All Rights Reserved
+        </Typography>
+        <SocialLinks />
+      </Stack>
     </Box>
   );
 };

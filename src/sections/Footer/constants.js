@@ -1,4 +1,4 @@
-import { Instagram, Dribbble, Call } from "iconsax-react"
+import { Instagram, Call, Sms } from "iconsax-react"
 
 export const FOOTER_LINKS = {
   category1: [
@@ -61,16 +61,16 @@ export const SOCIAL_LINKS = [
   {
     platform: "phone",
     icon: <Call />,
-    url: "https://github.com",
+    url: "tel:+919146625622",
+  },
+  {
+    platform: "mail",
+    icon: <Sms/>,
+    url: "mailto:team@devgeeks.in",
   },
   {
     platform: "instagram",
     icon: <Instagram />,
-    url: "https://instagram.com",
-  },
-  {
-    platform: "Dribbble",
-    icon: <Dribbble />,
-    url: "https://dribbble.com/",
+    url: "https://www.instagram.com/ui.isaac/",
   },
 ];
