@@ -1,160 +1,57 @@
 export const PROJECTS = {
-  travelite: {
-    available: false,
-    banner: "/media/images/projects/travelite/case-study/banner.png",
-    bannerMob: "/media/images/projects/travelite/case-study/banner.png",
-    title: "travelite",
-    desc: "Discord Music Bot",
-    longDesc:
-      "The ultimate student travel app for budget trips, exporation & epic events with best possible deals",
-    website: "https://mitronbot.netlify.app",
-    info: {
-      headquaters: "Jharkhand, India",
-      industry: "SaaS, Integrated Plugin",
-      companySize: "5 employees",
-    },
-    servicesProvided: [
-      "Visual identity",
-      "UX research",
-      "Website design",
-      "Design system",
-      "CMS integration",
-    ],
-
-    overview: {
-      client:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      challenge:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      solution:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    },
-    body: [
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-logo-white-bg.svg",
-      },
-      {
-        type: "img",
-        layout: "grid",
-        src: "/media/images/projects/mitron/case-study/mitron-logo-dark-bg.svg",
-        src2: "/media/images/projects/mitron/case-study/mitron-logo-blue-bg.svg",
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/ad.png",
-      },
-      {
-        type: "img",
-        layout: "grid",
-        src: "/media/images/projects/mitron/case-study/mitron-logo-wordmark-discord.png",
-        src2: "/media/images/projects/mitron/case-study/mitron-logo-construction.svg",
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-business-cards.svg",
-      },
-      {
-        layout: "block",
-        title:
-          "Helping Mitron become a modern, professional, and highly credible brand",
-        desc: `We focused on establishing a more emotive connection with ShipBob’s customers through content and design. We prioritised video testimonials and case studies on the homepage, and adjusted layouts to allow for more and larger images. Warehouse photography gives a snapshot into the size and scale of operations, and helps to build trust. Highlighting real ShipBob employees on the careers pages lends personality to the brand.
-        We redesigned and modernised their logo, introducing a completely new design language through color, typography and style. We created new brand guidelines to help maintain structure and visual impact across print and digital applications`,
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-visual-identity.svg",
-      },
-      {
-        layout: "block",
-        title: "The new website",
-        desc: `We focused on establishing a more emotive connection with ShipBob’s customers through content and design. We prioritised video testimonials and case studies on the homepage, and adjusted layouts to allow for more and larger images. Warehouse photography gives a snapshot into the size and scale of operations, and helps to build trust. Highlighting real ShipBob employees on the careers pages lends personality to the brand.
-        We redesigned and modernised their logo, introducing a completely new design language through color, typography and style. We created new brand guidelines to help maintain structure and visual impact across print and digital applications`,
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-website.png",
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-website-full.png",
-      },
-      {
-        type: "img",
-        layout: "grid",
-        src: "/media/images/projects/mitron/case-study/mitron-landing-page-mobile.png",
-        src2: "/media/images/projects/mitron/case-study/mitron-about-us-mobile.png",
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-website-articles.png",
-      },
-      {
-        layout: "block",
-        title: "Discord Server Design",
-        desc: `We focused on establishing a more emotive connection with ShipBob’s customers through content and design. We prioritised video testimonials and case studies on the homepage, and adjusted layouts to allow for more and larger images. Warehouse photography gives a snapshot into the size and scale of operations, and helps to build trust. Highlighting real ShipBob employees on the careers pages lends personality to the brand.
-        We redesigned and modernised their logo, introducing a completely new design language through color, typography and style. We created new brand guidelines to help maintain structure and visual impact across print and digital applications`,
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-welcome-banners.png",
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-player-bg.png",
-      },
-      {
-        type: "img",
-        layout: "block",
-        src: "/media/images/projects/mitron/case-study/mitron-templates.png",
-      },
-    ],
-    result: {
-      stats: [
-        {
-          desc: "lift in conversion rate within 28 days of launching the new website",
-          value: 27,
-          suffix: "%",
-        },
-        {
-          desc: "Bot installs on discord in a span of 3 days after launch",
-          value: 500,
-          suffix: "+",
-        },
-      ],
-      review: {
-        content:
-          "The positive feedback from our customers and prospective customers on the website was instantaneous. It was great for our team internally and the BB Agency to receive such glowing reviews, but it was the data on conversion rates that I focused on. We actually saw a 27% lift in conversion rates blended across all traffic sources",
-        author: "Ronit Singh",
-        designation: "Co-Founder, Mitron",
-        pfp: "/media/images/projects/mitron/case-study/mitron-co-founder.png",
-      },
-    },
+  saasOS: {
+    title: "SaaS OS",
+    cover: "/media/images/projects/saas-os/case-study/cover.jpg",
+    available: true,
+    website: "https://saas-os.netlify.app/",
+    desc: "We helped escalate the look & feel of SaaS OS, the world's easiest-to-use SaaS development and ideation tool powered by AI",
   },
-  hypemash: {
-    available: false,
-    desc: "",
-    longDesc:
-      "Social marketing platform that allows music makers and content creators to create campaigns that can effectively reach their fanbase",
+  proteinBox: {
+    title: "Protein Box",
+    cover: "/media/images/projects/protein-box/case-study/cover.jpg",
+    available: true,
+    website: "https://protein-box.com/",
+    desc: "We helped Protein Box, a startup providing healthy protein meals, achieve its goals by capturing leads and increasing profitability",
   },
   flexibus: {
-    available: false,
-    desc: "Local Transport Network",
-    longDesc: "A transport network startup aiming to provide easy & efficient flow of transit of passengers travelling via local transport",
+    title: "Flexibus",
+    cover: "/media/images/projects/flexibus/case-study/cover.png",
+    available: true,
+    website: "https://flexibus.in/",
+    desc: "We developed a stunning app and website for Flexibus, a startup in Goa aiming to enhance the experience of people traveling via public transport",
   },
-  demin: {
+  travelite: {
+    title: "Travelite",
+    cover: "/media/images/projects/travelite/case-study/cover.png",
+    available: true,
+    website: "https://flexibus.in/",
+    desc: "We crafted a Gen-Z, head-turning prototype for Travlite, a startup aiming to provide personalized itineraries using AI"
+  },
+  hypemash: {
+    title: "Hypemash",
+    cover: "/media/images/projects/hypemash/case-study/cover.png",
     available: false,
-    desc: "Personalised trendy wear",
-    longDesc:
-      "Get your own swanky anime merch and make it yours, with a wide range of customization, with our easy-to-use interface",
+    desc: "We helped transform the look and feel of HypeMash, a service that generates buzz for your music by offering music pre-saving",
+  },
+  pinnacle: {
+    title: "Pinnacle",
+    website: "https://pinnaclebrandsolution.ca",
+    cover: "/media/images/projects/pinnacle/case-study/cover.jpg",
+    available: true,
+    desc: "We helped boost engagement for Pinnacle, a digital marketing agency based in Canada, enabling it to stand out amongst its competitors",
+  },
+  turbo: {
+    title: "Turbo",
+    cover: "/media/images/projects/turbo/case-study/cover.jpg",
+    website: "https://turboformeet.netlify.app/",
+    available: true,
+    desc: "We developed the Turbo extension, a Chrome extension that brings over 40 new features to Google Meet",
+  },
+  mitron: {
+    title: "Mitron",
+    website: "https://mitronbot.netlify.app/",
+    cover: "/media/images/projects/mitron/case-study/cover.png",
+    available: true,
+    desc: "We designed and developed the website and provided branding services for a Discord bot that allows users to listen to music together with friends",
   },
 };

@@ -22,13 +22,13 @@ export const Work = () => {
           <Box width="100%">
             <Masonry spacing={{ xs: 0, sm: 6 }} columns={{ xs: 1, sm: 2 }}>
               {Object.entries(PROJECTS).map(
-                ([title, { longDesc, available }], idx) => {
+                ([title, { desc, available, cover, website }], idx) => {
                   return (
                     <Box key={idx} pb={{ xs: 6, sm: 0 }}>
                       <Box data-sal="fade-up">
                         <Stack spacing={3}>
                           <Link
-                            path={available ? `/case-studies/${title}` : ""}
+                            url={website}
                             component={
                               <Box
                                 sx={{
@@ -43,7 +43,7 @@ export const Work = () => {
                                 }}
                               >
                                 <img
-                                  src={`/media/images/projects/${title}/case-study/cover.png`}
+                                  src={cover}
                                   width="100%"
                                   style={{ borderRadius: "12px" }}
                                   alt={`${title}-cover`}
@@ -68,14 +68,14 @@ export const Work = () => {
                                 color="text.primary"
                                 fontWeight={300}
                               >
-                                {longDesc}
+                                {desc}
                               </Typography>
                             </Box>
                           </Stack>
                           <Box data-sal="fade-up" data-sal-delay={200}>
                             {available ? (
                               <Link
-                                path={available ? `/case-studies/${title}` : ""}
+                                url={website}
                                 component={
                                   <Button
                                     variant="outlined"
@@ -111,14 +111,6 @@ export const Work = () => {
               )}
             </Masonry>
           </Box>
-          <Button
-            variant="contained"
-            size="large"
-            m="auto"
-            sx={{ textTransform: "capitalize" }}
-          >
-            View all case studies
-          </Button>
         </Stack>
       </Box>
     </Box>
