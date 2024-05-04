@@ -21,7 +21,7 @@ export const NavLinkGroup = ({ links, dark }) => {
                   color:
                     pathname === path || pathname.includes(path + "/")
                       ? "white.main"
-                      : "text.secondary",
+                      : "textWhite.secondary",
                   "&:after": {
                     position: "absolute",
                     bgcolor: "white.main",

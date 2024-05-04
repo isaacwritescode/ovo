@@ -22,11 +22,11 @@ export const FooterMiddle = () => {
                 </Typography>
               }
             />
-            <Typography variant="body1" color="text.secondary">
+            <Typography variant="body1" color="textWhite.secondary">
               Web Development Agency
             </Typography>
             <SocialLinks />
-            <Typography variant="body1" color="text.secondary">
+            <Typography variant="body1" color="textWhite.secondary">
               ©2022 DevGeeks Agency. <br /> All Rights Reserved
             </Typography>
           </Stack>
@@ -50,7 +50,7 @@ export const FooterMiddle = () => {
                     component={
                       <Typography
                         variant="body1"
-                        color="text.secondary"
+                        color="textWhite.secondary"
                         py={0.5}
                         sx={{
                           "&:hover": { textDecoration: "underline" },

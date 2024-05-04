@@ -1,23 +1,11 @@
 export const INTEGRATIONS = [
   {
-    title: "webflow",
-    desc: "Get your website built with webflow for easy editing"
-  },
-  {
-    title: "framer",
-    desc: "Get your website built with framer for easy editing"
-  },
-  {
-    title: "analytics",
-    desc: "See how users interact with your website"
+    title: "google analytics",
+    desc: "Get detailed insights into your website traffic"
   },
   {
     title: "hubspot",
     desc: "Easy content management with hubspot CMS"
-  },
-  {
-    title: "wordpress",
-    desc: "Get your website built with wordpress for easy editing"
   },
   {
     title: "shopify",
@@ -28,7 +16,15 @@ export const INTEGRATIONS = [
     desc: "Add cool animations to your site with fast renders"
   },
   {
-    title: "cloudflare",
-    desc: "Improve your security & decrease downtime"
+    title: "mailchimp",
+    desc: "Seamless management of email marketing campaigns"
+  },
+  {
+    title: "stripe",
+    desc: "Start accepting payments through your website"
+  },
+  {
+    title: "twilio",
+    desc: "Integrate voice, messaging, and video capabilities"
   },
 ]

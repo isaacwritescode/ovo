@@ -13,8 +13,8 @@ export const Work = () => {
         <Stack spacing={8} alignItems="center">
           <Header
             title="CASE STUDIES"
-            heading="Shopify Brands, Entrepreneurs and influencers % experience more conversions with DevGeeks"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            heading="Startups, Entrepreneurs and Small Businesses % experience more conversions with DevGeeks"
+            desc="Discover what we do and how we make it happen"
             maxWidth={640}
             mb={{ md: 8 }}
             color="blue"

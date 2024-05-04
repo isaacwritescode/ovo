@@ -24,14 +24,14 @@ export const Integrations = () => {
   }, [inView]);
 
   return <Box width="100%" bgcolor="#f2f3f5" position="relative">
-    <Stack spacing={4} py={12}>
+    <Stack spacing={4} pt={16}>
       <Box width={{ lg: "80%", xs: "90%" }} m="auto" >
         <Grid container spacing={{ xs: 2, sm: 0 }}>
           <Grid item md={6}>
             <Typography variant="h3" fontWeight={600}>Integrations?<br /><Box display="inline" color="blue.main">We've got you covered</Box> </Typography>
           </Grid>
           <Grid item md={6}>
-            <Typography variant="body1" color="text.secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</Typography>
+            <Typography variant="body1" color="text.secondary">We specialize in integrating powerful tools and services to enhance the functionality and performance of your website. From seamless e-commerce integrations with leading platforms like Shopify and WooCommerce to implementing robust CRM solutions such as Salesforce and HubSpot, we leverage the latest technologies to streamline operations and drive growth for your business</Typography>
           </Grid>
         </Grid>
       </Box>
@@ -51,7 +51,7 @@ export const Integrations = () => {
         </Stack>
       </Box>}
     </Stack>
-    {md && <Box sx={{ overflowX: "hidden" }} py={12}>
+    {md && <Box sx={{ overflowX: "hidden" }} py={16}>
       <Stack spacing={3} ref={ref}>
         <Stack ref={ref1} direction="row" spacing={3} sx={{ width: 2400, transition: "transform linear 0.1s", willChange: "transform" }}>
           {INTEGRATIONS.slice(0, 4).map((({ title, desc }, idx) =>

@@ -48,7 +48,7 @@ const theme = createTheme({
           },
         },
         outlined: {
-          borderColor: "#00000030"
+          borderColor: "#00000030",
         },
         disabled: {
           color: "#000000",
@@ -82,6 +82,10 @@ const theme = createTheme({
     white: {
       main: "#ffffff",
       contrastText: "#000000",
+    },
+    textWhite: {
+      primary: "#ffffff",
+      secondary: "#ffffff80",
     },
     blue: {
       main: "#2097F6",
@@ -119,15 +123,11 @@ const theme = createTheme({
     },
     pink: {
       main: "#A33BFC",
-      contrastText: "#ffffff"
+      contrastText: "#ffffff",
     },
     skyBlue: {
       main: "#35C0FC",
       contrastText: "#ffffff",
-    },
-    text: {
-      primary: "#000000",
-      secondary: "#AAB1C1",
     },
     gradient: {
       orangePink: "linear-gradient(90deg, #C98530 3.95%, #F02864 100.2%)",

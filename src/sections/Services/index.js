@@ -35,7 +35,7 @@ export const Services = () => {
                     <Typography variant="h6" fontWeight={600} color="white.main">
                       {heading}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body1" color="textWhite.secondary">
                       {desc}
                     </Typography>
                   </Stack>

@@ -14,7 +14,9 @@ export const Mission = () => {
   const [onCountUpEnd, setOnCountUpEnd] = useState(false);
   return <Box width="100%" position="relative" bgcolor="#292D32" py={12} sx={{ background: "url(/media/images/illus/components.svg) bottom no-repeat, url(/media/images/illus/noise-bg.png) center", backgroundSize: "contain, cover", backgroundAttachment: "inherit, fixed", backgroundRepeat: "no-repear, repeat" }}>
     <Box width={{ xs: "90%", lg: "80%" }} m="auto">
-      <Header title="OUR MISSION" heading="We’ve successfully delivered hundreds of %niche-targeted custom solutions" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" color="purple" maxWidth={600} mode="dark" mb={{ xs: 2, md: 12 }} />
+      <Header title="OUR MISSION" heading="We’ve successfully delivered hundreds of %niche-targeted custom solutions" 
+      desc="We are dedicated to delivering exceptional web development services that not only meet but exceed our clients' expectations"
+       color="purple" maxWidth={600} mode="dark" mb={{ xs: 2, md: 12 }} />
       <Box mx={{ md: "auto" }} width={{ xs: "100%", sm: "fit-content" }} mb={{ xs: 22, sm: 44, md: 80 }}>
         <VisibilitySensor
           active={!viewPortEntered}

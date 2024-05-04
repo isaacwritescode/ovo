@@ -3,7 +3,6 @@ import {
   Button,
   IconButton,
   Stack,
-  Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
