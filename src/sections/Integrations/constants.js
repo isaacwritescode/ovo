@@ -1,7 +1,7 @@
 export const INTEGRATIONS = [
   {
     title: "google analytics",
-    desc: "Get detailed insights into your website traffic"
+    desc: "Get insights into your website traffic"
   },
   {
     title: "hubspot",
