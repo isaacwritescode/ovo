@@ -12,7 +12,7 @@ export const Content = () => {
 
   return (
     <Stack spacing={4} alignItems="center">
-      <Box data-sal="fade-up" py={4}>
+      <Box data-sal="fade-up" py={6}>
         <Stack
           alignItems={{ md: "center" }}
           justifyContent="center"

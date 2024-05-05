@@ -4,7 +4,7 @@ export const ImageView = () => {
   // const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
-    <Box position="relative" width="100%" boxSizing="border-box" borderRadius={8}  border={1} p={1} borderColor="#ffffff50">
+    <Box position="relative" width="100%" boxSizing="border-box" borderRadius={8} border={1} p={1} borderColor="#ffffff50">
       <video
         style={{
           borderRadius: 24,
