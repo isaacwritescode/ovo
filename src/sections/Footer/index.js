@@ -36,13 +36,14 @@ export const Footer = () => {
               Let's work together
             </Typography>
             <Typography variant="body1" color="textWhite.secondary">
-              We're ready when you are. Join us and explore a world of
-              endless possibilities!
+              We're ready when you are. Join us and explore a world of endless
+              possibilities!
             </Typography>
             <Button
               size="large"
               variant="contained"
               color="white"
+              onClick={() => window.open("tel:+919146625622")}
               sx={{ width: "fit-content" }}
             >
               Get in touch

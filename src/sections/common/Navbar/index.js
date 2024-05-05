@@ -1,7 +1,5 @@
-import { Menu, CloseOutlined } from "@mui/icons-material";
 import {
   Button,
-  IconButton,
   Stack,
   useMediaQuery,
   useTheme,
@@ -16,7 +14,6 @@ export const Navbar = ({
   setIsMenuVisible,
 }) => {
   const theme = useTheme();
-  const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
 
   // const [navTheme, setNavTheme] = useState("dark");
@@ -65,6 +62,7 @@ export const Navbar = ({
           <Button
             variant="contained"
             color="white"
+            onClick={()=> window.open("tel:+919146625622")}
             sx={{ borderColor: "#ffffff40" }}
           >
             Get in touch
