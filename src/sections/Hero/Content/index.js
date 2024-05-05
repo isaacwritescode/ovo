@@ -12,10 +12,8 @@ export const Content = () => {
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <Stack spacing={4} alignItems="center"
-    >
-      <Box data-sal="fade-up" width="90%"
-        py={6}>
+    <Stack spacing={4} alignItems="center">
+      <Box data-sal="fade-up" py={4}>
         <Stack
           alignItems={{ md: "center" }}
           justifyContent="center"
@@ -33,12 +31,17 @@ export const Content = () => {
           >
             We build experiences that convert
           </Typography>
-          <Typography variant="body1" color="textWhite.secondary" fontWeight={400} width={{ sm: "60%" }}>
-            DevGeeks is a design and development agency specialized in creating simple and performant UX's for startups
+          <Typography
+            variant="body1"
+            color="textWhite.secondary"
+            fontWeight={400}
+            width={{ sm: "60%" }}
+          >
+            DevGeeks is a design and development agency specialized in creating
+            simple and performant UX's for startups
           </Typography>
-          {sm || <Button size="large" variant="contained" color="white" sx={{ width: "fit-content" }}>Request a Quote</Button>}
         </Stack>
-      </Box >
-    </Stack >
+      </Box>
+    </Stack>
   );
 };

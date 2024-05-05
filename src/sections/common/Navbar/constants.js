@@ -1,23 +1,22 @@
 export const NAVBAR_LINKS = [
   {
     title: "work",
-    path: "/coming-soon",
-  },
-  {
-    title: "about",
-    path: "/coming-soon",
+    path: "#work",
   },
   {
     title: "services",
-    path: "/coming-soon",
+    path: "#services",
   },
   {
     title: "case studies",
-    label: "new",
-    path: "/coming-soon",
+    label: "soon",
   },
   {
-    title: "team",
-    path: "/coming-soon",
+    title: "FAQ",
+    path: "#faq",
+  },
+  {
+    title: "testimonials",
+    path: "#testimonials",
   },
 ];

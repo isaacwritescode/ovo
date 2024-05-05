@@ -49,34 +49,26 @@ export const Navbar = ({
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        width="80%"
+        width={{ xs: "90%", lg: "80%" }}
         height="72px"
         m="auto"
         maxWidth={1400}
       >
         <Link
           path="/"
-          component={<img src="logos/logo+wordmark.svg" height={28} alt="logo" />}
+          component={
+            <img src="logos/logo+wordmark.svg" height={28} alt="logo" />
+          }
         />
         {md && <NavLinkGroup links={NAVBAR_LINKS} dark />}
         <Stack direction="row" spacing={2}>
-          {sm && (
-            <Button
-              variant="contained"
-              color="white"
-              sx={{ borderColor: "#ffffff40" }}
-            >
-              Get in touch
-            </Button>
-          )}
-          {md || (
-            <IconButton
-              sx={{ color: "white.main" }}
-              onClick={() => setIsMenuVisible(!isMenuVisible)}
-            >
-              {isMenuVisible ? <CloseOutlined /> : <Menu />}
-            </IconButton>
-          )}
+          <Button
+            variant="contained"
+            color="white"
+            sx={{ borderColor: "#ffffff40" }}
+          >
+            Get in touch
+          </Button>
         </Stack>
       </Stack>
     </Stack>

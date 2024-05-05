@@ -8,11 +8,11 @@ import { Masonry } from "@mui/lab";
 
 export const Work = () => {
   return (
-    <Box bgcolor="white.main" width="100%">
+    <Box id="work" bgcolor="white.main" width="100%">
       <Box maxWidth={1400} m="auto" py={12} width={{ xs: "90%", md: "80%" }}>
         <Stack spacing={8} alignItems="center">
           <Header
-            title="CASE STUDIES"
+            title="OUR WORK"
             heading="Startups, Entrepreneurs and Small Businesses % experience more conversions with DevGeeks"
             desc="Discover what we do and how we make it happen"
             maxWidth={640}

@@ -7,7 +7,7 @@ import { SERVICES } from "./constants";
 export const Services = () => {
   const theme = useTheme()
   return (
-    <Box width={{ xs: "90%", lg: "80%" }} py={{ xs: 8, sm: 16 }} maxWidth={1400} m="auto">
+    <Box id="services" width={{ xs: "90%", lg: "80%" }} py={{ xs: 8, sm: 16 }} maxWidth={1400} m="auto">
       <Stack alignItems="center" spacing={8}>
         <Header
           mode="dark"

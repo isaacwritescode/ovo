@@ -25,7 +25,7 @@ export const Testimonials = () => {
     return () => clearInterval(interval);
   }, [value, currTestimonialIdx]);
   return (
-    <Box width="100%" py={16} bgcolor="#ffffff">
+    <Box id="testimonials" width="100%" py={16} bgcolor="white.main">
       <Box
         width={{ xs: "90%", lg: "80%" }}
         m="auto"
