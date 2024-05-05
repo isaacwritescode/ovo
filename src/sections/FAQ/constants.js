@@ -1,11 +1,11 @@
 export const FAQ_ITEMS = [
   {
     title: "Do you possess the knowledge to help me with my project?",
-    desc: `Honest answer is: we don’t know until you tell us what your project is about. We have gained a lot of experience during the past years working with global brands like Coca-Cola, Allianz or Metro, but also with startup’s in the US or Canada. We have already provided solutions for almost all industries and we have talented people with a lot of expertise at Fintory. Please get in touch and we are pretty sure to find a way to support you and your project`,
+    desc: `Honest answer is: We don’t know until you tell us about your project. With years of experience working with notable brands, as well as startups in the UK, Canada & India, we've tackled diverse challenges across numerous industries. Our talented team has deep expertise across various domains. Get in touch with us, and we're confident that together we can find the right solution to support your project`,
   },
   {
-    title: "Do you also provide a creative concept for videos and images?",
-    desc: `We usually advise to consolidate the concept creation and actual realization of the advert. During the past years, we have perfected the way our designers and our social media team work together to provide the most efficient ad campaigns. Although we love to be involved in all steps of the process, we can also solely provide the concept, or realize your finished storyboard. Please contact us to discuss your ideas`,
+    title: "What is the typical timeline for a project with DevGeeks?",
+    desc: `Project timelines can vary depending on the scope and complexity of the project. We work closely with clients to establish timelines during the initial consultation phase and strive to deliver high-quality results within agreed-upon deadlines.`,
   },
   {
     title: "How can I get a proposal?",

@@ -1,20 +1,28 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
+import { styled, useTheme } from "@mui/material/styles";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { AddCircleOutline, RemoveCircleOutline } from "@mui/icons-material";
+import { useMediaQuery } from "@mui/material";
 
 const CustomAccordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square sx={{
-    "&.Mui-expanded": {
-      bgcolor: "#ffffff10",
-      borderRadius: 4
-    }, bgcolor: "transparent",
-    borderRadius: 0
-  }} {...props} />
-))(({ theme, expanded }) => ({
+  <MuiAccordion
+    disableGutters
+    elevation={0}
+    square
+    sx={{
+      "&.Mui-expanded": {
+        bgcolor: "#ffffff20",
+        borderRadius: 4,
+      },
+      bgcolor: "transparent",
+      borderRadius: 0,
+    }}
+    {...props}
+  />
+))(({ theme, expanded, md }) => ({
   "&:before": {
     display: "none",
   },
@@ -22,17 +30,28 @@ const CustomAccordion = styled((props) => (
     color: "white.main",
     marginLeft: theme.spacing(1),
   },
+  padding: md ? theme.spacing(2) : theme.spacing(1),
 }));
 
 const AccordionSummary = styled(({ expanded, ...props }) => (
   <MuiAccordionSummary
-    expandIcon={expanded ? <RemoveCircleOutline sx={{
-      fontSize: "1.5rem",
-      color: "white.main",
-    }} /> : <AddCircleOutline sx={{
-      fontSize: "1.5rem",
-      color: "white.main",
-    }} />}
+    expandIcon={
+      expanded ? (
+        <RemoveCircleOutline
+          sx={{
+            fontSize: "1.5rem",
+            color: "white.main",
+          }}
+        />
+      ) : (
+        <AddCircleOutline
+          sx={{
+            fontSize: "1.5rem",
+            color: "white.main",
+          }}
+        />
+      )
+    }
     {...props}
   />
 ))(({ theme }) => ({
@@ -43,10 +62,11 @@ const AccordionSummary = styled(({ expanded, ...props }) => (
   "& .MuiAccordionSummary-content": {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(2),
+    marginBottom: theme.spacing(0),
   },
   "& .MuiAccordionSummary-content > *": {
-    fontWeight: 500
-  }
+    fontWeight: 600,
+  },
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
@@ -54,15 +74,24 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function Accordion({ title, desc, expanded, onChange }) {
+  const theme = useTheme();
+  const md = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <CustomAccordion expanded={expanded} onChange={onChange}>
+    <CustomAccordion expanded={expanded} onChange={onChange} md={md}>
       <AccordionSummary expanded={expanded}>
-        <Typography variant="h6" sx={{
-          color: "white.main",
-        }}>{title}</Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            color: "white.main",
+          }}
+        >
+          {title}
+        </Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography variant="body1" color="#ffffff80">{desc}</Typography>
+        <Typography variant="body1" color="rgba(255,255,255,0.8)">
+          {desc}
+        </Typography>
       </AccordionDetails>
     </CustomAccordion>
   );
