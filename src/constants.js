@@ -24,7 +24,7 @@ export const PROJECTS = {
     title: "Travelite",
     cover: "/media/images/projects/travelite/case-study/cover.png",
     available: true,
-    website: "https://flexibus.in/",
+    website: "https://justravelite.in/",
     desc: "We crafted a Gen-Z, head-turning prototype for Travlite, a startup aiming to provide personalized itineraries using AI"
   },
   hypemash: {
