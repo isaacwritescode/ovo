@@ -10,10 +10,10 @@ export const ImageView = () => {
           borderRadius: 24,
           width: "100%"
         }}
-        autoPlay={true}
+        preload="metadata"
+        autoPlay
         loop
         muted
-        preload="metadata"
         playsinline
       >
         <source src="media/videos/slideshow.mp4" type="video/mp4" />
