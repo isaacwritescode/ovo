@@ -32,7 +32,10 @@ export const Work = () => {
                             component={
                               <Box
                                 sx={{
+                                  borderRadius: 3,
                                   overflow: "hidden",
+                                  aspectRatio:
+                                    (idx + 1) % 2 === 0 ? "1/1" : "504/700",
                                   "& img": {
                                     cursor: "pointer",
                                     transition: "all ease 0.3s",

@@ -27,7 +27,7 @@ export const Header = ({ mode, title, heading, desc, type, maxWidth, mb, cta, co
         <Typography
           variant="body1"
           color={mode === "dark" ? "rgba(255,255,255,0.8)" : "text.secondary"}
-          width="80%"
+          width="90%"
         >
           {desc}
         </Typography>

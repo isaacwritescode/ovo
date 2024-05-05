@@ -34,7 +34,7 @@ export const Content = () => {
             variant="body1"
             color="textWhite.secondary"
             fontWeight={400}
-            width={{ sm: "60%" }}
+            width={{ sm: "80%" }}
           >
             DevGeeks is a design and development agency specialized in creating
             simple and performant UX's for startups
