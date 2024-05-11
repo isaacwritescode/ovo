@@ -124,7 +124,7 @@ export const Integrations = () => {
         )}
       </Stack>
       {md && (
-        <Box sx={{ overflowX: "hidden" }} py={16}>
+        <Box sx={{ overflowX: "hidden" }} pb={12}>
           <Stack spacing={3} ref={ref}>
             <Stack
               ref={ref1}
