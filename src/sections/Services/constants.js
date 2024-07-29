@@ -15,7 +15,7 @@ export const SERVICES = [
   {
     icon: <PresentionChart />,
     color: "orange",
-    heading: "Staregy",
+    heading: "Strategy",
     desc: "DevGeeks develops data-driven strategies that drive business growth. We analyze market insights to create tailored plans aligned with your objectives."
   },
   {
