@@ -21,10 +21,10 @@ export const TESTIMONIALS = [
     review: `Our experience working with DevGeeks Agency was exceptional. They crafted a Gen-Z, head-turning prototype that perfectly encapsulated our vision at Travlite. Their creativity and attention to detail were evident in every aspect of the project. We absolutely loved the prototype for AI-driven personalized itinerary concept. We're excited about the potential this prototype holds for our startup and look forward to continuing our collaboration with DevGeeks Agency.`,
   },
   {
-    image: "/media/images/avatars/aishwariya-balan.jpg",
-    name: "Aishwarya Balan",
-    occupation: "CEO, Pinnacle Brand Solution",
+    image: "/media/images/avatars/francis.jpg",
+    name: "Francisco Lopes",
+    occupation: "Owner, Indian Kitchen",
     title: "All my needs & more",
-    review: `Partnering with DevGeeks agency was a game-changer for our digital marketing agency. They not only built an impressive website but also incorporated stunning animations that truly set us apart. The goal of engaging users and standing out among competitors was achieved thanks to their innovative approach and technical proficiency. We look forward to continued collaboration and recommend them for anyone seeking to enhance their online presence.`,
+    review: `Partnering with DevGeeks agency was a game-changer for our hotel. They not only built an impressive website but also incorporated stunning animations that truly set us apart. The goal of engaging users and standing out among competitors was achieved thanks to their innovative approach and technical proficiency. We look forward to continued collaboration and recommend them for anyone seeking to enhance their online presence.`,
   },
 ];
